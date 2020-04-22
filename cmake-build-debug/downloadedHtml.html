@@ -1,0 +1,218 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>MG  3001.15GbsPrskB+CH800P</title>
+
+<script type="text/javascript">
+    
+    function odkaz(link) {
+        window.location = link;
+    }
+    
+    function Setting(Param1, SetParam1, Param2, SetParam2, Param3, SetParam3, SetParam4, SetParam5, SetParam6) {
+        document.getElementById(Param1).src = SetParam1;
+        document.getElementById(Param2).src = SetParam2;
+        document.getElementById(Param3).style.color = SetParam3;
+        document.getElementById("SWNadpis").style.color = SetParam4;
+        document.getElementById("SWNadpis").innerHTML = SetParam5;
+        document.getElementById("SWText").innerHTML = SetParam6;
+    }
+
+    function hot(item) {
+        var temp = 'false';
+        switch (item) {
+            case "cuttingprograms":
+                Setting("MIcon4", "./App_Themes/Skin/image/button/ServiceReportDIS.png", "Diode4", "./App_Themes/Skin/image/button/MenuDiodeDIS.png", "Mtext4", "#717171", "#000000", "", "");
+                Setting("MIcon1", "./App_Themes/Skin/image/button/CuttingProgramsHOT.png", "Diode1", "./App_Themes/Skin/image/button/MenuDiodeHOTModra.png", "Mtext1", "#000000", "#000000", "Cutting programs", "Management of Cutting Programs <ul><li>CNC definition<li>CNC managing<li>Evaluation of cutting process" + "<img src=\"./App_Themes/Skin/image/screenShot/CuttingPrograms.png\" alt=\"\" />");
+                break;
+            case "machineinfo":
+                Setting("MIcon4", "./App_Themes/Skin/image/button/ServiceReportDIS.png", "Diode4", "./App_Themes/Skin/image/button/MenuDiodeDIS.png", "Mtext4", "#717171", "#000000", "", "");
+                Setting("MIcon2", "./App_Themes/Skin/image/button/MachineInfoHOT.png", "Diode2", "./App_Themes/Skin/image/button/MenuDiodeHOTOranzova.png", "Mtext2", "#000000", "#000000", "Machine information", "Statical information about machine operation, operation and idle durations, detailed overview of utilised consumables, number of piercings, applied technology with possibility of exporting data in most common formats." + "<br/><br/><img src=\"./App_Themes/Skin/image/screenShot/MachineInfo.png\" alt=\"\" />");
+                break;
+            case "ekoinfo":
+                Setting("MIcon4", "./App_Themes/Skin/image/button/ServiceReportDIS.png", "Diode4", "./App_Themes/Skin/image/button/MenuDiodeDIS.png", "Mtext4", "#717171", "#000000", "", "");
+                Setting("MIcon3", "./App_Themes/Skin/image/button/EkoInfoHOT.png", "Diode3", "./App_Themes/Skin/image/button/MenuDiodeHOTZelena.png", "Mtext3", "#000000", "#000000", "Production information", "Module for processing production data related to the machine. Support for production evaluation and efficiency analysis. Provides information about operation costs, processed sheet, cutting performance, etc." + "<br/><br/><img src=\"./App_Themes/Skin/image/screenShot/EkoInfo.png\" alt=\"\" />");
+                break;
+            case "servicereport": 
+                Setting("MIcon4", "./App_Themes/Skin/image/button/ServiceReportHOT.png", "Diode4", "./App_Themes/Skin/image/button/MenuDiodeHOTFialova.png", "Mtext4", "#000000", "#000000", "Service Report", "Management of Events and Conditions for service reporting, management of reports and contacs list, RSS and settings of email messaging." + "<br/><br/><img src=\"./App_Themes/Skin/image/screenShot/ServiceReport.PNG\" alt=\"\" />");
+                if (temp == "true")
+                    Setting("MIcon4", "./App_Themes/Skin/image/button/ServiceReportHOT.png", "Diode4", "./App_Themes/Skin/image/button/MenuDiodeHOTFialova.png", "Mtext4", "#000000", "#000000", "Service is required !", "");
+                break;
+            case "manuals":
+                Setting("MIcon4", "./App_Themes/Skin/image/button/ServiceReportDIS.png", "Diode4", "./App_Themes/Skin/image/button/MenuDiodeDIS.png", "Mtext4", "#717171", "#000000", "", "");
+                Setting("MIcon5", "./App_Themes/Skin/image/button/ManualsHOT.png", "Diode5", "./App_Themes/Skin/image/button/MenuDiodeHOTCervena.png", "Mtext5", "#000000", "#000000", "Documentation navigator", "Display thematically and hierarchically organised shortcuts to different documents in elektronic form. Including relevant user manuals, troubleshooting guides, description of machine hardware documents and documents containing useful hints." + "<br/><br/><img src=\"./App_Themes/Skin/image/screenShot/Manual.png\" alt=\"\" />");
+                break;
+        }
+    }
+    function dis(item) {
+        var temp = 'false';
+        switch (item) {
+            case "cuttingprograms":
+                Setting("MIcon1", "./App_Themes/Skin/image/button/CuttingProgramsDIS.png", "Diode1", "./App_Themes/Skin/image/button/MenuDiodeDIS.png", "Mtext1", "#717171", "#000000", "", "");
+                break;
+            case "machineinfo":
+                Setting("MIcon2", "./App_Themes/Skin/image/button/MachineInfoDIS.png", "Diode2", "./App_Themes/Skin/image/button/MenuDiodeDIS.png", "Mtext2", "#717171", "#000000", "", "");
+                break;
+            case "ekoinfo":
+                Setting("MIcon3", "./App_Themes/Skin/image/button/EkoInfoDIS.png", "Diode3", "./App_Themes/Skin/image/button/MenuDiodeDIS.png", "Mtext3", "#717171", "#000000", "", "");
+                break;
+            case "servicereport":
+                Setting("MIcon4", "./App_Themes/Skin/image/button/ServiceReportDIS.png", "Diode4", "./App_Themes/Skin/image/button/MenuDiodeDIS.png", "Mtext4", "#717171", "#000000", "", "");
+                break;
+            case "manuals":
+                Setting("MIcon5", "./App_Themes/Skin/image/button/ManualsDIS.png", "Diode5", "./App_Themes/Skin/image/button/MenuDiodeDIS.png", "Mtext5", "#717171", "#000000", "", "");
+                break;
+        }        
+        if (temp == "true")
+            Setting("MIcon4", "./App_Themes/Skin/image/button/ServiceReportHOT.png", "Diode4", "./App_Themes/Skin/image/button/MenuDiodeHOTFialova.png", "Mtext4", "#000000", "#000000", "Service is required !", "");
+    }
+    function setEvent() {
+            Setting("MIcon4", "./App_Themes/Skin/image/button/ServiceReportHOT.png", "Diode4", "./App_Themes/Skin/image/button/MenuDiodeHOTFialova.png", "Mtext4", "#000000", "#000000", "Service is required !", "");
+    }
+</script> 
+<title>
+	Machine information center
+</title>
+<link href="MSmainMaster.css" rel="stylesheet" type="text/css">
+<link href="App_Themes/Skin/Default.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <form name="aspnetForm" method="post" action="./" id="aspnetForm">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTg3OTc3NTYxOA9kFgJmD2QWAgIDD2QWAgIBD2QWIGYPD2QWAh4HT25jbGljawUVb2RrYXooJy9NYWNoaW5lSW5mbycpZAIBDw9kFgIfAAURb2RrYXooJy9Fa29JbmZvJylkAgIPD2QWAh8ABRdvZGtheignL1NlcnZpY2VSZXBvcnQnKWQCAw8PZBYCHwAFEW9ka2F6KCcvTWFudWFscycpZAIEDw8WAh4EVGV4dAVRTWljcm9TdGVwIHNwb2wuIHMgci5vLiw8YnIgLz5WYWpub3Jza8OhIDE1ODxiciAvPjgzMSAwNCBCcmF0aXNsYXZhPGJyIC8+U2xvdmVuc2tvZGQCBg8PZBYCHwAFDW9ka2F6KCcvTVJQJylkAgcPD2QWAh8ABQ1vZGtheignL01SUCcpZAIIDxYCHwAFDW9ka2F6KCcvTVJQJylkAgkPD2QWAh8ABRVvZGtheignL01hY2hpbmVJbmZvJylkAgoPFgIfAAUVb2RrYXooJy9NYWNoaW5lSW5mbycpZAILDw9kFgIfAAURb2RrYXooJy9Fa29JbmZvJylkAgwPFgIfAAURb2RrYXooJy9Fa29JbmZvJylkAg0PD2QWAh8ABRdvZGtheignL1NlcnZpY2VSZXBvcnQnKWQCDg8WAh8ABRdvZGtheignL1NlcnZpY2VSZXBvcnQnKWQCDw8PZBYCHwAFEW9ka2F6KCcvTWFudWFscycpZAIQDxYCHwAFEW9ka2F6KCcvTWFudWFscycpZGQmp5N3lxlQM88yG5d7DD/GFaBP2SmMrbkFAIE38dIkXw==">
+</div>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="8E82E4C9">
+</div>
+    <div class="Stranka">
+        <div class="Content1">
+            
+    <div class="TopMargin"></div>
+    <div class="LeftGray">
+        <div class="LogoMS"></div>
+        <div class="LeftGrayGradient">
+            <div class="Line3Left">                
+                <div class="Line3LeftRow"></div>
+                <div class="Diode1"></div>
+                
+                <div class="Diode2">
+                    <a id="ctl00_ContentPlaceHolder1_SDiode2" class="Cursor" onclick="odkaz('/MachineInfo')">
+                        <img id="Diode2" src="./App_Themes/Skin/image/button/MenuDiodeDIS.png" alt="" onmouseover='hot("machineinfo");' onmouseout='dis("machineinfo");' style="float: left;border-style: solid;border-width: 0px;">
+                    </a>
+                </div>
+                
+                <div class="Diode3">
+                    <a id="ctl00_ContentPlaceHolder1_SDiode3" class="Cursor" onclick="odkaz('/EkoInfo')">
+                        <img id="Diode3" src="./App_Themes/Skin/image/button/MenuDiodeDIS.png" alt="" onmouseover='hot("ekoinfo");' onmouseout='dis("ekoinfo");' style="float: left;border-style: solid;border-width: 0px;">
+                    </a>
+                </div>
+                <div class="Diode4">
+                    <a id="ctl00_ContentPlaceHolder1_SDiode4" class="Cursor" onclick="odkaz('/ServiceReport')">
+                        <img id="Diode4" src="./App_Themes/Skin/image/button/MenuDiodeDIS.png" alt="" onmouseover='hot("servicereport");' onmouseout='dis("servicereport");' style="float: left;border-style: solid;border-width: 0px;">
+                    </a>
+                </div>
+                <div class="Diode5">
+                    <a id="ctl00_ContentPlaceHolder1_SDiode5" class="Cursor" onclick="odkaz('/Manuals')">
+                        <img id="Diode5" src="./App_Themes/Skin/image/button/MenuDiodeDIS.png" alt="" onmouseover='hot("manuals");' onmouseout='dis("manuals");' style="float: left;border-style: solid;border-width: 0px;">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Heading">
+        <div class="Info">
+            <!--<div class="Language"></div>-->
+            <div class="Address">
+                <table border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td class="AddressHeadline" align="left">
+                            Address:
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="AddressText">
+                            <span id="ctl00_ContentPlaceHolder1_AddressLabel">MicroStep spol. s r.o.,<br>Vajnorsk&aacute; 158<br>831 04 Bratislava<br>Slovensko</span>
+                        </td>
+                    </tr>
+                </table> 
+            </div>
+        </div>
+        <div class="Headline">MG  3001.15GbsPrskB+CH800P<!--DS 6001.20PB-->
+</div>
+    </div>
+    <div class="Menu">
+        <div class="MenuRowTop"><span id="ctl00_ContentPlaceHolder1_serviceLabel" style="color:Red;"></span></div>
+        <div class="MenuRow1">
+            <a id="ctl00_ContentPlaceHolder1_SDiode1" class="Cursor" onclick="odkaz('/MRP')">
+                <img id="Diode1" src="./App_Themes/Skin/image/button/MenuDiodeDIS.png" alt="" onmouseover='hot("cuttingprograms");' onmouseout='dis("cuttingprograms");' style="float: left;border-style: solid;border-width: 0px;margin-top: 27px;margin-left: -26px;_position:relative;_z-index: 2;">
+            </a>
+            <a id="ctl00_ContentPlaceHolder1_SMIcon1" class="Cursor" onclick="odkaz('/MRP')">
+                <img id="MIcon1" src="./App_Themes/Skin/image/button/CuttingProgramsDIS.png" alt="" onmouseover='hot("cuttingprograms");' onmouseout='dis("cuttingprograms");' style="float: left;margin-left: 69px;margin-top: 12px;border-style: solid;border-width: 0px;">
+            </a>
+            <div id="ctl00_ContentPlaceHolder1_SMtext1" class="Mtext" onclick="odkaz('/MRP')">
+                <a href="#" id="Mtext1" onmouseover='hot("cuttingprograms");' onmouseout='dis("cuttingprograms");'>Cutting programs</a>
+            </div>
+        </div>
+        <div class="MenuRow2">
+            <a id="ctl00_ContentPlaceHolder1_SMIcon2" class="Cursor" onclick="odkaz('/MachineInfo')">
+                <img id="MIcon2" src="./App_Themes/Skin/image/button/MachineInfoDIS.png" alt="" onmouseover='hot("machineinfo");' onmouseout='dis("machineinfo");' style="float: left;margin-left: 73px;margin-top: 12px;border-style: solid;border-width: 0px;">
+            </a>
+            <div id="ctl00_ContentPlaceHolder1_SMtext2" class="Mtext" onclick="odkaz('/MachineInfo')">
+                <a href="#" id="Mtext2" onmouseover='hot("machineinfo");' onmouseout='dis("machineinfo");'>Machine Info</a>
+            </div>
+        </div>
+        <div class="MenuRow3">
+            <a id="ctl00_ContentPlaceHolder1_SMIcon3" class="Cursor" onclick="odkaz('/EkoInfo')">
+                <img id="MIcon3" src="./App_Themes/Skin/image/button/EkoInfoDIS.png" alt="" onmouseover='hot("ekoinfo");' onmouseout='dis("ekoinfo");' style="float: left;margin-left: 38px;margin-top: 12px;border-style: solid;border-width: 0px;">
+            </a>
+            <div id="ctl00_ContentPlaceHolder1_SMtext3" class="Mtext" onclick="odkaz('/EkoInfo')">
+                <a href="#" id="Mtext3" onmouseover='hot("ekoinfo");' onmouseout='dis("ekoinfo");'>EkoInfo</a>
+            </div>
+        </div>
+        <div class="MenuRow4">
+            <a id="ctl00_ContentPlaceHolder1_SMIcon4" class="Cursor" onclick="odkaz('/ServiceReport')">
+                <img id="MIcon4" src="./App_Themes/Skin/image/button/ServiceReportDIS.png" alt="" onmouseover='hot("servicereport");' onmouseout='dis("servicereport");' style="float: left;margin-left: 18px; margin-top: 12px;border-style: solid;border-width: 0px;">
+            </a>
+            <div id="ctl00_ContentPlaceHolder1_SMtext4" class="Mtext" onclick="odkaz('/ServiceReport')">
+                <a href="#" id="Mtext4" onclick='odkaz("/ServiceReport");' onmouseover='hot("servicereport");' onmouseout='dis("servicereport");'>Service Report</a>
+            </div>
+        </div>
+        <div class="MenuRow5">
+            <a id="ctl00_ContentPlaceHolder1_SMIcon5" class="Cursor" onclick="odkaz('/Manuals')">
+                <img id="MIcon5" src="./App_Themes/Skin/image/button/ManualsDIS.png" alt="" onmouseover='hot("manuals");' onmouseout='dis("manuals");' style="float: left;margin-top: 12px;border-style: solid;border-width: 0px;">
+            </a>
+            <div id="ctl00_ContentPlaceHolder1_SMtext5" class="Mtext" onclick="odkaz('/Manuals')">
+                <a href="#" id="Mtext5" onclick='odkaz("/Manuals");' onmouseover='hot("manuals");' onmouseout='dis("manuals");'>Manuals</a>
+            </div>
+        </div>
+    </div>
+    <div class="SeparateGradient"></div>
+    <div class="ShowWindow">
+        <div class="ShowWindowRow"></div>
+        <div class="ShowWindowTop">
+            <img alt="" src="./App_Themes/Skin/image/SWLeftTopCorrner.png" style="float: left;">
+            <img alt="" src="./App_Themes/Skin/image/SWRightTopCorrner.png" style="float: right;">
+        </div>
+        <div class="ShowWindowCenter">
+            <div id="SWNadpis" class="ShowWindowNadpis"></div>
+            <div id="SWText" class="ShowWindowText"></div>
+        </div>
+        <div class="ShowWindowBottom">
+            <img alt="" src="./App_Themes/Skin/image/SWLeftBottomCorrner.png" style="float: left;">
+            <img alt="" src="./App_Themes/Skin/image/SWRightBottomCorrner.png" style="float: right;">
+        </div>
+    </div>
+    <div class="Clearer"></div>
+    
+
+        </div>
+        <div class="BottomEnd1">
+            <a href="http://www.microstep.eu" target="_blank" class="BELink">www.microstep.eu</a>
+        </div>
+        <div class="BottomEnd2"></div>
+    </div>
+    </form>
+</body>
+</html>

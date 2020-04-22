@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="web_downloader"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/richardbalaz/Projects/web-downloader/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/richardbalaz/Projects/web-downloader/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/richardbalaz/Projects/web-downloader/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/richardbalaz/Projects/web-downloader/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/richardbalaz/Projects/web-downloader/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/richardbalaz/Projects/web-downloader/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/richardbalaz/Projects/web-downloader/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/richardbalaz/Projects/web-downloader/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/richardbalaz/Projects/web-downloader/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/richardbalaz/Projects/web-downloader/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/richardbalaz/Projects/web-downloader/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/richardbalaz/Projects/web-downloader/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/richardbalaz/Projects/web-downloader/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/richardbalaz/Projects/web-downloader/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/richardbalaz/Projects/web-downloader/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="web_downloader">
+				<Option output="/Users/richardbalaz/Projects/web-downloader/cmake-build-debug/web_downloader" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/richardbalaz/Projects/web-downloader/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/richardbalaz/Projects/web-downloader/src"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/usr/include/libxml2"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/richardbalaz/Projects/web-downloader/cmake-build-debug/Makefile&quot;  VERBOSE=1 web_downloader"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/richardbalaz/Projects/web-downloader/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/richardbalaz/Projects/web-downloader/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/richardbalaz/Projects/web-downloader/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="web_downloader/fast">
+				<Option output="/Users/richardbalaz/Projects/web-downloader/cmake-build-debug/web_downloader" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/richardbalaz/Projects/web-downloader/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/richardbalaz/Projects/web-downloader/src"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/usr/include/libxml2"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/richardbalaz/Projects/web-downloader/cmake-build-debug/Makefile&quot;  VERBOSE=1 web_downloader/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/richardbalaz/Projects/web-downloader/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/richardbalaz/Projects/web-downloader/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/richardbalaz/Projects/web-downloader/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/richardbalaz/Projects/web-downloader/src/Html/Html.cpp">
+			<Option target="web_downloader"/>
+		</Unit>
+		<Unit filename="/Users/richardbalaz/Projects/web-downloader/src/Html/Html.h">
+			<Option target="web_downloader"/>
+		</Unit>
+		<Unit filename="/Users/richardbalaz/Projects/web-downloader/src/Html/HtmlDebug.cpp">
+			<Option target="web_downloader"/>
+		</Unit>
+		<Unit filename="/Users/richardbalaz/Projects/web-downloader/src/Html/HtmlDebug.h">
+			<Option target="web_downloader"/>
+		</Unit>
+		<Unit filename="/Users/richardbalaz/Projects/web-downloader/src/Html/HtmlDumper.cpp">
+			<Option target="web_downloader"/>
+		</Unit>
+		<Unit filename="/Users/richardbalaz/Projects/web-downloader/src/Html/HtmlDumper.h">
+			<Option target="web_downloader"/>
+		</Unit>
+		<Unit filename="/Users/richardbalaz/Projects/web-downloader/src/Html/HtmlParser.cpp">
+			<Option target="web_downloader"/>
+		</Unit>
+		<Unit filename="/Users/richardbalaz/Projects/web-downloader/src/Html/HtmlParser.h">
+			<Option target="web_downloader"/>
+		</Unit>
+		<Unit filename="/Users/richardbalaz/Projects/web-downloader/src/Http/HttpClient.cpp">
+			<Option target="web_downloader"/>
+		</Unit>
+		<Unit filename="/Users/richardbalaz/Projects/web-downloader/src/Http/HttpClient.h">
+			<Option target="web_downloader"/>
+		</Unit>
+		<Unit filename="/Users/richardbalaz/Projects/web-downloader/src/Task/Task.cpp">
+			<Option target="web_downloader"/>
+		</Unit>
+		<Unit filename="/Users/richardbalaz/Projects/web-downloader/src/Task/Task.h">
+			<Option target="web_downloader"/>
+		</Unit>
+		<Unit filename="/Users/richardbalaz/Projects/web-downloader/src/Task/TaskBase.cpp">
+			<Option target="web_downloader"/>
+		</Unit>
+		<Unit filename="/Users/richardbalaz/Projects/web-downloader/src/Task/TaskBase.h">
+			<Option target="web_downloader"/>
+		</Unit>
+		<Unit filename="/Users/richardbalaz/Projects/web-downloader/src/Task/TaskDownloadFile.cpp">
+			<Option target="web_downloader"/>
+		</Unit>
+		<Unit filename="/Users/richardbalaz/Projects/web-downloader/src/Task/TaskDownloadFile.h">
+			<Option target="web_downloader"/>
+		</Unit>
+		<Unit filename="/Users/richardbalaz/Projects/web-downloader/src/Task/TaskDownloadImages.cpp">
+			<Option target="web_downloader"/>
+		</Unit>
+		<Unit filename="/Users/richardbalaz/Projects/web-downloader/src/Task/TaskDownloadImages.h">
+			<Option target="web_downloader"/>
+		</Unit>
+		<Unit filename="/Users/richardbalaz/Projects/web-downloader/src/Task/TaskDownloadWeb.cpp">
+			<Option target="web_downloader"/>
+		</Unit>
+		<Unit filename="/Users/richardbalaz/Projects/web-downloader/src/Task/TaskDownloadWeb.h">
+			<Option target="web_downloader"/>
+		</Unit>
+		<Unit filename="/Users/richardbalaz/Projects/web-downloader/src/Task/TaskModifyLinks.cpp">
+			<Option target="web_downloader"/>
+		</Unit>
+		<Unit filename="/Users/richardbalaz/Projects/web-downloader/src/Task/TaskModifyLinks.h">
+			<Option target="web_downloader"/>
+		</Unit>
+		<Unit filename="/Users/richardbalaz/Projects/web-downloader/src/main.cpp">
+			<Option target="web_downloader"/>
+		</Unit>
+		<Unit filename="/Users/richardbalaz/Projects/web-downloader/src/precomp.h">
+			<Option target="web_downloader"/>
+		</Unit>
+		<Unit filename="/Users/richardbalaz/Projects/web-downloader/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
