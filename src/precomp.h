@@ -10,6 +10,8 @@
 #include <utility>
 #include <exception>
 #include <vector>
+#include <memory>
+#include <functional>
 
 using namespace std;
 

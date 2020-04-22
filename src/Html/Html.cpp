@@ -51,5 +51,8 @@ HtmlNode::HtmlNode(xmlNode *node)
 
 auto HtmlNode::property(const string &name) const -> string
 {
-    return string((char *) xmlGetProp(_node, (xmlChar *) name.c_str()));
+    xmlChar * prop = xmlGetProp(_node, (xmlChar *) name.c_str());
+    string propStr((char *) prop);
+    xmlFree(prop);
+    return propStr;
 }
