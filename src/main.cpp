@@ -1,7 +1,9 @@
 #include <precomp.h>
 #include <Html/HtmlParser.h>
 #include <Html/HtmlDebug.h>
+#include <Http/HttpPath.h>
 #include <Task/TaskDownloadWeb.h>
+#include "Application.h"
 
 int main(int argc, char * argv[])
 {
@@ -9,7 +11,7 @@ int main(int argc, char * argv[])
     {
         string url(argv[1]);
 
-        TaskDownloadWeb dw(url);
+        TaskDownloadWeb dw("http://192.168.2.249/MSMain/");
         dw.process();
     }
     else

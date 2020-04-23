@@ -7,10 +7,12 @@
 
 #include "Html.h"
 
+class HttpPath;
+
 class HtmlParser
 {
 public:
-    static auto parse(const string & document) -> shared_ptr<Html>;
+    static auto parse(const string & document, const HttpPath & url) -> shared_ptr<Html>;
 
 private:
     static auto getLibXmlParsingOptions() -> int;

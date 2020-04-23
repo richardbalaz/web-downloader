@@ -12,7 +12,12 @@
 #include <vector>
 #include <memory>
 #include <functional>
+#include <fstream>
+#include <regex>
+#include <optional>
 
 using namespace std;
+
+#include <Application.h>
 
 #endif //WEB_DOWNLOADER_PRECOMP_H

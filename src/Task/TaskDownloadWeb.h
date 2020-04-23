@@ -5,8 +5,8 @@
 #ifndef WEB_DOWNLOADER_TASKDOWNLOADWEB_H
 #define WEB_DOWNLOADER_TASKDOWNLOADWEB_H
 
-
 #include "TaskBase.h"
+#include <Http/HttpPath.h>
 
 class TaskDownloadWeb : public TaskBase
 {
@@ -18,7 +18,7 @@ public:
     auto process() -> void override;
 
 private:
-    string _url;
+    HttpPath _url;
     shared_ptr<Html> _web;
 };
 

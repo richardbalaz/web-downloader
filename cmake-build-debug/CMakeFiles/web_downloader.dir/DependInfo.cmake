@@ -4,11 +4,13 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/Users/richardbalaz/Projects/web-downloader/src/Application.cpp" "/Users/richardbalaz/Projects/web-downloader/cmake-build-debug/CMakeFiles/web_downloader.dir/src/Application.cpp.o"
   "/Users/richardbalaz/Projects/web-downloader/src/Html/Html.cpp" "/Users/richardbalaz/Projects/web-downloader/cmake-build-debug/CMakeFiles/web_downloader.dir/src/Html/Html.cpp.o"
   "/Users/richardbalaz/Projects/web-downloader/src/Html/HtmlDebug.cpp" "/Users/richardbalaz/Projects/web-downloader/cmake-build-debug/CMakeFiles/web_downloader.dir/src/Html/HtmlDebug.cpp.o"
   "/Users/richardbalaz/Projects/web-downloader/src/Html/HtmlDumper.cpp" "/Users/richardbalaz/Projects/web-downloader/cmake-build-debug/CMakeFiles/web_downloader.dir/src/Html/HtmlDumper.cpp.o"
   "/Users/richardbalaz/Projects/web-downloader/src/Html/HtmlParser.cpp" "/Users/richardbalaz/Projects/web-downloader/cmake-build-debug/CMakeFiles/web_downloader.dir/src/Html/HtmlParser.cpp.o"
   "/Users/richardbalaz/Projects/web-downloader/src/Http/HttpClient.cpp" "/Users/richardbalaz/Projects/web-downloader/cmake-build-debug/CMakeFiles/web_downloader.dir/src/Http/HttpClient.cpp.o"
+  "/Users/richardbalaz/Projects/web-downloader/src/Http/HttpPath.cpp" "/Users/richardbalaz/Projects/web-downloader/cmake-build-debug/CMakeFiles/web_downloader.dir/src/Http/HttpPath.cpp.o"
   "/Users/richardbalaz/Projects/web-downloader/src/Task/Task.cpp" "/Users/richardbalaz/Projects/web-downloader/cmake-build-debug/CMakeFiles/web_downloader.dir/src/Task/Task.cpp.o"
   "/Users/richardbalaz/Projects/web-downloader/src/Task/TaskBase.cpp" "/Users/richardbalaz/Projects/web-downloader/cmake-build-debug/CMakeFiles/web_downloader.dir/src/Task/TaskBase.cpp.o"
   "/Users/richardbalaz/Projects/web-downloader/src/Task/TaskDownloadFile.cpp" "/Users/richardbalaz/Projects/web-downloader/cmake-build-debug/CMakeFiles/web_downloader.dir/src/Task/TaskDownloadFile.cpp.o"

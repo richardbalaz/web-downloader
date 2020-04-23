@@ -5,14 +5,17 @@
 #ifndef WEB_DOWNLOADER_HTTPCLIENT_H
 #define WEB_DOWNLOADER_HTTPCLIENT_H
 
+class HttpPath;
 
 class HttpClient
 {
 public:
-    explicit HttpClient(string url);
+    HttpClient();
     virtual ~HttpClient();
 
-    static string getContent(const string & url);
+    void setHostname(const string & hostname);
+
+    string getContent(const HttpPath & url);
 public:
 
     void setPutData(const string & data, const char * type)
@@ -38,7 +41,7 @@ public:
 
 
 private:
-    void parseUrl(string && url);
+    void setUri(const string & uri);
 
     bool openSocket();
     void closeSocket();

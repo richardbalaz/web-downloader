@@ -123,6 +123,33 @@ web_downloader/fast:
 	$(MAKE) -f CMakeFiles/web_downloader.dir/build.make CMakeFiles/web_downloader.dir/build
 .PHONY : web_downloader/fast
 
+src/Application.o: src/Application.cpp.o
+
+.PHONY : src/Application.o
+
+# target to build an object file
+src/Application.cpp.o:
+	$(MAKE) -f CMakeFiles/web_downloader.dir/build.make CMakeFiles/web_downloader.dir/src/Application.cpp.o
+.PHONY : src/Application.cpp.o
+
+src/Application.i: src/Application.cpp.i
+
+.PHONY : src/Application.i
+
+# target to preprocess a source file
+src/Application.cpp.i:
+	$(MAKE) -f CMakeFiles/web_downloader.dir/build.make CMakeFiles/web_downloader.dir/src/Application.cpp.i
+.PHONY : src/Application.cpp.i
+
+src/Application.s: src/Application.cpp.s
+
+.PHONY : src/Application.s
+
+# target to generate assembly for a file
+src/Application.cpp.s:
+	$(MAKE) -f CMakeFiles/web_downloader.dir/build.make CMakeFiles/web_downloader.dir/src/Application.cpp.s
+.PHONY : src/Application.cpp.s
+
 src/Html/Html.o: src/Html/Html.cpp.o
 
 .PHONY : src/Html/Html.o
@@ -257,6 +284,33 @@ src/Http/HttpClient.s: src/Http/HttpClient.cpp.s
 src/Http/HttpClient.cpp.s:
 	$(MAKE) -f CMakeFiles/web_downloader.dir/build.make CMakeFiles/web_downloader.dir/src/Http/HttpClient.cpp.s
 .PHONY : src/Http/HttpClient.cpp.s
+
+src/Http/HttpPath.o: src/Http/HttpPath.cpp.o
+
+.PHONY : src/Http/HttpPath.o
+
+# target to build an object file
+src/Http/HttpPath.cpp.o:
+	$(MAKE) -f CMakeFiles/web_downloader.dir/build.make CMakeFiles/web_downloader.dir/src/Http/HttpPath.cpp.o
+.PHONY : src/Http/HttpPath.cpp.o
+
+src/Http/HttpPath.i: src/Http/HttpPath.cpp.i
+
+.PHONY : src/Http/HttpPath.i
+
+# target to preprocess a source file
+src/Http/HttpPath.cpp.i:
+	$(MAKE) -f CMakeFiles/web_downloader.dir/build.make CMakeFiles/web_downloader.dir/src/Http/HttpPath.cpp.i
+.PHONY : src/Http/HttpPath.cpp.i
+
+src/Http/HttpPath.s: src/Http/HttpPath.cpp.s
+
+.PHONY : src/Http/HttpPath.s
+
+# target to generate assembly for a file
+src/Http/HttpPath.cpp.s:
+	$(MAKE) -f CMakeFiles/web_downloader.dir/build.make CMakeFiles/web_downloader.dir/src/Http/HttpPath.cpp.s
+.PHONY : src/Http/HttpPath.cpp.s
 
 src/Task/Task.o: src/Task/Task.cpp.o
 
@@ -456,6 +510,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... web_downloader"
+	@echo "... src/Application.o"
+	@echo "... src/Application.i"
+	@echo "... src/Application.s"
 	@echo "... src/Html/Html.o"
 	@echo "... src/Html/Html.i"
 	@echo "... src/Html/Html.s"
@@ -471,6 +528,9 @@ help:
 	@echo "... src/Http/HttpClient.o"
 	@echo "... src/Http/HttpClient.i"
 	@echo "... src/Http/HttpClient.s"
+	@echo "... src/Http/HttpPath.o"
+	@echo "... src/Http/HttpPath.i"
+	@echo "... src/Http/HttpPath.s"
 	@echo "... src/Task/Task.o"
 	@echo "... src/Task/Task.i"
 	@echo "... src/Task/Task.s"

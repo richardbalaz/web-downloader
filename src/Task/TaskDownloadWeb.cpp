@@ -10,15 +10,15 @@
 #include "TaskDownloadImages.h"
 
 TaskDownloadWeb::TaskDownloadWeb(string url)
-    : _url(std::move(url))
+    : _url(move(url))
     , _web(nullptr)
 {
 }
 
 auto TaskDownloadWeb::process() -> void
 {
-    const string content = HttpClient::getContent(_url);
-    _web = HtmlParser::parse(content);
+    const string content = Application::httpClient().getContent(_url);
+    _web = HtmlParser::parse(content, _url);
 
     cout << "download web" << endl;
 

@@ -1,9 +1,11 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/web_downloader.dir/src/Application.cpp.o"
   "CMakeFiles/web_downloader.dir/src/Html/Html.cpp.o"
   "CMakeFiles/web_downloader.dir/src/Html/HtmlDebug.cpp.o"
   "CMakeFiles/web_downloader.dir/src/Html/HtmlDumper.cpp.o"
   "CMakeFiles/web_downloader.dir/src/Html/HtmlParser.cpp.o"
   "CMakeFiles/web_downloader.dir/src/Http/HttpClient.cpp.o"
+  "CMakeFiles/web_downloader.dir/src/Http/HttpPath.cpp.o"
   "CMakeFiles/web_downloader.dir/src/Task/Task.cpp.o"
   "CMakeFiles/web_downloader.dir/src/Task/TaskBase.cpp.o"
   "CMakeFiles/web_downloader.dir/src/Task/TaskDownloadFile.cpp.o"

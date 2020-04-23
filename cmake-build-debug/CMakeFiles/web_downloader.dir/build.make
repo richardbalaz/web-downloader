@@ -213,6 +213,32 @@ CMakeFiles/web_downloader.dir/src/Task/TaskDownloadImages.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/web_downloader.dir/src/Task/TaskDownloadImages.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/richardbalaz/Projects/web-downloader/src/Task/TaskDownloadImages.cpp -o CMakeFiles/web_downloader.dir/src/Task/TaskDownloadImages.cpp.s
 
+CMakeFiles/web_downloader.dir/src/Application.cpp.o: CMakeFiles/web_downloader.dir/flags.make
+CMakeFiles/web_downloader.dir/src/Application.cpp.o: ../src/Application.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/richardbalaz/Projects/web-downloader/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/web_downloader.dir/src/Application.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/web_downloader.dir/src/Application.cpp.o -c /Users/richardbalaz/Projects/web-downloader/src/Application.cpp
+
+CMakeFiles/web_downloader.dir/src/Application.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/web_downloader.dir/src/Application.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/richardbalaz/Projects/web-downloader/src/Application.cpp > CMakeFiles/web_downloader.dir/src/Application.cpp.i
+
+CMakeFiles/web_downloader.dir/src/Application.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/web_downloader.dir/src/Application.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/richardbalaz/Projects/web-downloader/src/Application.cpp -o CMakeFiles/web_downloader.dir/src/Application.cpp.s
+
+CMakeFiles/web_downloader.dir/src/Http/HttpPath.cpp.o: CMakeFiles/web_downloader.dir/flags.make
+CMakeFiles/web_downloader.dir/src/Http/HttpPath.cpp.o: ../src/Http/HttpPath.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/richardbalaz/Projects/web-downloader/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/web_downloader.dir/src/Http/HttpPath.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/web_downloader.dir/src/Http/HttpPath.cpp.o -c /Users/richardbalaz/Projects/web-downloader/src/Http/HttpPath.cpp
+
+CMakeFiles/web_downloader.dir/src/Http/HttpPath.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/web_downloader.dir/src/Http/HttpPath.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/richardbalaz/Projects/web-downloader/src/Http/HttpPath.cpp > CMakeFiles/web_downloader.dir/src/Http/HttpPath.cpp.i
+
+CMakeFiles/web_downloader.dir/src/Http/HttpPath.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/web_downloader.dir/src/Http/HttpPath.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/richardbalaz/Projects/web-downloader/src/Http/HttpPath.cpp -o CMakeFiles/web_downloader.dir/src/Http/HttpPath.cpp.s
+
 # Object files for target web_downloader
 web_downloader_OBJECTS = \
 "CMakeFiles/web_downloader.dir/src/main.cpp.o" \
@@ -226,7 +252,9 @@ web_downloader_OBJECTS = \
 "CMakeFiles/web_downloader.dir/src/Task/Task.cpp.o" \
 "CMakeFiles/web_downloader.dir/src/Task/TaskDownloadFile.cpp.o" \
 "CMakeFiles/web_downloader.dir/src/Html/Html.cpp.o" \
-"CMakeFiles/web_downloader.dir/src/Task/TaskDownloadImages.cpp.o"
+"CMakeFiles/web_downloader.dir/src/Task/TaskDownloadImages.cpp.o" \
+"CMakeFiles/web_downloader.dir/src/Application.cpp.o" \
+"CMakeFiles/web_downloader.dir/src/Http/HttpPath.cpp.o"
 
 # External object files for target web_downloader
 web_downloader_EXTERNAL_OBJECTS =
@@ -243,10 +271,12 @@ web_downloader: CMakeFiles/web_downloader.dir/src/Task/Task.cpp.o
 web_downloader: CMakeFiles/web_downloader.dir/src/Task/TaskDownloadFile.cpp.o
 web_downloader: CMakeFiles/web_downloader.dir/src/Html/Html.cpp.o
 web_downloader: CMakeFiles/web_downloader.dir/src/Task/TaskDownloadImages.cpp.o
+web_downloader: CMakeFiles/web_downloader.dir/src/Application.cpp.o
+web_downloader: CMakeFiles/web_downloader.dir/src/Http/HttpPath.cpp.o
 web_downloader: CMakeFiles/web_downloader.dir/build.make
 web_downloader: /usr/lib/libxml2.dylib
 web_downloader: CMakeFiles/web_downloader.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/richardbalaz/Projects/web-downloader/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable web_downloader"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/richardbalaz/Projects/web-downloader/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable web_downloader"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/web_downloader.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

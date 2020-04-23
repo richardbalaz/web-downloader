@@ -17,8 +17,10 @@ auto TaskDownloadImages::process() -> void
 
     for(const auto & img : _web->search("img"))
     {
-        string url = img.property("src");
+        HttpPath url(img.property("src"), &_web->url());
         setNext(make_unique<TaskDownloadFile>(url));
+
+        cout << "image" << endl;
     }
 
     TaskBase::process();

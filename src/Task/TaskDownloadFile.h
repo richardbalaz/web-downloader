@@ -5,20 +5,20 @@
 #ifndef WEB_DOWNLOADER_TASKDOWNLOADFILE_H
 #define WEB_DOWNLOADER_TASKDOWNLOADFILE_H
 
-
 #include "TaskBase.h"
+#include <Http/HttpPath.h>
 
 class TaskDownloadFile : public TaskBase
 {
 public:
-    TaskDownloadFile(string url);
+    TaskDownloadFile(const HttpPath & url);
     ~TaskDownloadFile() override {};
 
 public:
     auto process() -> void override;
 
 private:
-    string _url;
+    HttpPath _url;
 };
 
 #endif //WEB_DOWNLOADER_TASKDOWNLOADFILE_H

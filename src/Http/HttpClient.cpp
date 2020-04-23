@@ -10,11 +10,10 @@
 #include <unistd.h>
 
 #include "HttpClient.h"
+#include "HttpPath.h"
 
-HttpClient::HttpClient(string url)
-{
-    parseUrl(move(url));
-}
+HttpClient::HttpClient()
+{}
 
 HttpClient::~HttpClient()
 {
@@ -87,6 +86,7 @@ HttpClient & HttpClient::readResponse()
     vector<char> buffer;
     buffer.resize(10 * 1024);
 
+    _response.clear();
     _response.reserve(8 * 1024);
 
     int nDataLength;
@@ -123,20 +123,14 @@ void HttpClient::closeSocket()
     _socket = -1;
 }
 
-void HttpClient::parseUrl(string && url)
+void HttpClient::setUri(const string & uri)
 {
-    _hostname = std::move(url);
-    if(_hostname.find("http://") != string::npos)
-        _hostname.erase(0, 7);
+    _uri = uri;
+}
 
-    _uri = "/";
-
-    auto pos = _hostname.find('/');
-    if(pos != string::npos)
-    {
-        _uri = string(_hostname.begin() + pos, _hostname.end());
-        _hostname.erase(_hostname.begin() + pos, _hostname.end());
-    }
+void HttpClient::setHostname(const string & hostname)
+{
+    _hostname = hostname;
 }
 
 bool HttpClient::openSocket()
@@ -168,15 +162,17 @@ bool HttpClient::openSocket()
     return true;
 }
 
-string HttpClient::getContent(const string & url)
+string HttpClient::getContent(const HttpPath & url)
 {
     string tillError;
-    string content = HttpClient(url)
-            .setTimeout(10)
-            .sendHttp()
-            .readResponse()
-            .dataTillError(tillError)
-            .data();
 
-    return content;
+    setHostname(url.getHostname());
+    setUri(url.getUri());
+    setTimeout(10);
+    sendHttp();
+    readResponse();
+    dataTillError(tillError);
+
+    return data();
 }
+

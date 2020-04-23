@@ -7,6 +7,7 @@
 
 
 #include <libxml/HTMLparser.h>
+#include <Http/HttpPath.h>
 
 class HtmlNode
 {
@@ -21,10 +22,11 @@ private:
 class Html
 {
 public:
-    explicit Html(htmlDocPtr document);
+    explicit Html(htmlDocPtr document, const HttpPath & url);
     virtual ~Html();
 
     auto doc() const -> htmlDocPtr;
+    auto url() const -> const HttpPath &;
 
     auto search(const string & searchName) const -> vector<HtmlNode>;
 
@@ -33,6 +35,7 @@ private:
 
 private:
     htmlDocPtr _document;
+    HttpPath _url;
 };
 
 

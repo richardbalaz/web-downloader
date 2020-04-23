@@ -84,6 +84,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/richardbalaz/Projects/web-downloader/src/Application.cpp">
+			<Option target="web_downloader"/>
+		</Unit>
+		<Unit filename="/Users/richardbalaz/Projects/web-downloader/src/Application.h">
+			<Option target="web_downloader"/>
+		</Unit>
 		<Unit filename="/Users/richardbalaz/Projects/web-downloader/src/Html/Html.cpp">
 			<Option target="web_downloader"/>
 		</Unit>
@@ -112,6 +118,12 @@
 			<Option target="web_downloader"/>
 		</Unit>
 		<Unit filename="/Users/richardbalaz/Projects/web-downloader/src/Http/HttpClient.h">
+			<Option target="web_downloader"/>
+		</Unit>
+		<Unit filename="/Users/richardbalaz/Projects/web-downloader/src/Http/HttpPath.cpp">
+			<Option target="web_downloader"/>
+		</Unit>
+		<Unit filename="/Users/richardbalaz/Projects/web-downloader/src/Http/HttpPath.h">
 			<Option target="web_downloader"/>
 		</Unit>
 		<Unit filename="/Users/richardbalaz/Projects/web-downloader/src/Task/Task.cpp">

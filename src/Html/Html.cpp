@@ -5,8 +5,9 @@
 #include <precomp.h>
 #include "Html.h"
 
-Html::Html(htmlDocPtr document)
+Html::Html(htmlDocPtr document, const HttpPath & url)
     : _document(document)
+    , _url(url)
 {
 
 }
@@ -43,6 +44,11 @@ auto Html::search_impl(xmlNode *node, const std::function<bool(xmlNode *)> & isM
 
         search_impl(currentNode->children, isMatch, result);
     }
+}
+
+auto Html::url() const -> const HttpPath &
+{
+    return _url;
 }
 
 HtmlNode::HtmlNode(xmlNode *node)

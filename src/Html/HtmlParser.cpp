@@ -4,15 +4,16 @@
 
 #include <precomp.h>
 #include "HtmlParser.h"
+#include <Http/HttpPath.h>
 
-auto HtmlParser::parse(const string &document) -> shared_ptr<Html>
+auto HtmlParser::parse(const string &document, const HttpPath & url) -> shared_ptr<Html>
 {
     auto doc = htmlReadMemory(document.c_str(), document.length(),
                               getLibXmlParsingBaseUrl(),
                               getLibXmlParsingEncoding(),
                               getLibXmlParsingOptions());
 
-    return make_shared<Html>(doc);
+    return make_shared<Html>(doc, url);
 }
 
 auto HtmlParser::getLibXmlParsingOptions() -> int
