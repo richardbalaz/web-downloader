@@ -5,7 +5,7 @@
 #ifndef WEB_DOWNLOADER_TASKDOWNLOADFILE_H
 #define WEB_DOWNLOADER_TASKDOWNLOADFILE_H
 
-#include "TaskBase.h"
+#include "Task/TaskBase.h"
 #include <Http/HttpPath.h>
 
 class TaskDownloadFile : public TaskBase

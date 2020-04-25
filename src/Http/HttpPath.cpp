@@ -4,12 +4,15 @@
 #include <precomp.h>
 #include "HttpPath.h"
 
-HttpPath::HttpPath(string path, const HttpPath * prevPath)
+HttpPath::HttpPath(string path, const optional<HttpPath> & prevPath)
     : _path(move(path))
-    , _prevPath(prevPath)
+    , _hostnameDiffersFromPrev(nullopt)
 {
-    extractHostname();
-    extractUri();
+    extractHostname(prevPath);
+    extractUri(prevPath);
+
+    if(prevPath)
+        _hostnameDiffersFromPrev = getHostname() != prevPath->getHostname();
 }
 
 auto HttpPath::isAbsolute() const -> bool
@@ -30,11 +33,11 @@ auto HttpPath::getUri() const -> const string &
     return _uri;
 }
 
-auto HttpPath::extractHostname() -> bool
+auto HttpPath::extractHostname(const optional<HttpPath> & prevPath) -> bool
 {
     if(!isAbsolute())
     {
-        _hostname = _prevPath->getHostname();
+        _hostname = prevPath->getHostname();
         return false;
     }
 
@@ -52,7 +55,7 @@ auto HttpPath::extractHostname() -> bool
     return !_hostname.empty();
 }
 
-auto HttpPath::extractUri() -> bool
+auto HttpPath::extractUri(const optional<HttpPath> & prevPath) -> bool
 {
     string path = _path;
 
@@ -77,14 +80,14 @@ auto HttpPath::extractUri() -> bool
             return true;
         }
 
-        if(_prevPath->getUri().back() == '/')
+        if(prevPath->getUri().back() == '/')
         {
-            _uri = _prevPath->getUri() + path;
+            _uri = prevPath->getUri() + path;
             return true;
         }
 
-        auto lastSlashPos = _uri.find_last_of('/') ;
-        _uri = string(_prevPath->getUri().begin(), _prevPath->getUri().begin() + lastSlashPos) + path;
+        auto lastSlashPos = prevPath->getUri().find_last_of('/');
+        _uri = string(prevPath->getUri().begin(), prevPath->getUri().begin() + lastSlashPos + 1) + path;
     }
 
     /*if(_uri.back() == '/' && _uri.length() > 1)
@@ -93,3 +96,12 @@ auto HttpPath::extractUri() -> bool
     return !_uri.empty();
 }
 
+auto HttpPath::hostnameDiffersFromPrev() const -> bool
+{
+    return *_hostnameDiffersFromPrev;
+}
+
+auto HttpPath::operator==(const HttpPath &other) const -> bool
+{
+    return getHostname() == other.getHostname() && getUri() == other.getUri();
+}

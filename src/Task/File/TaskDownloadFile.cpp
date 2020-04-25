@@ -5,6 +5,7 @@
 #include <precomp.h>
 #include <Http/HttpClient.h>
 #include "TaskDownloadFile.h"
+#include "TaskSaveFile.h"
 
 TaskDownloadFile::TaskDownloadFile(const HttpPath & url)
         : _url(url)
@@ -14,17 +15,9 @@ auto TaskDownloadFile::process() -> void
 {
     cout << "download file '" << _url.getHostname() << "' uri: '" << _url.getUri() << "'" << endl;
 
-    const string content = Application::httpClient().getContent(_url);
+    string content = Application::getHttpClient().getContent(_url);
 
-
-    ofstream file("./test.png", ios::out | ios::binary);
-
-    if(!file.is_open())
-        throw runtime_error("Cannot open file for writing.");
-
-    file << content;
-
-    file.close();
+    setNext<TaskSaveFile>(_url, content);
     TaskBase::process();
 }
 

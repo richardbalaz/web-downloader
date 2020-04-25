@@ -24,3 +24,5 @@ auto TaskBase::process() -> void
     for(auto & task : _nextTasks)
         task->process();
 }
+
+

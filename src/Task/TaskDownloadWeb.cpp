@@ -7,9 +7,12 @@
 #include <Html/HtmlParser.h>
 #include "TaskDownloadWeb.h"
 #include "TaskModifyLinks.h"
-#include "TaskDownloadImages.h"
+#include "TaskDownloadLinks.h"
+#include "Task/Image/TaskDownloadImages.h"
+#include "TaskDownloadPage.h"
+#include "Task/Style/TaskDownloadStyles.h"
 
-TaskDownloadWeb::TaskDownloadWeb(string url)
+TaskDownloadWeb::TaskDownloadWeb(HttpPath url)
     : _url(move(url))
     , _web(nullptr)
 {
@@ -17,12 +20,16 @@ TaskDownloadWeb::TaskDownloadWeb(string url)
 
 auto TaskDownloadWeb::process() -> void
 {
-    const string content = Application::httpClient().getContent(_url);
+    const string content = Application::getHttpClient().getContent(_url);
     _web = HtmlParser::parse(content, _url);
 
     cout << "download web" << endl;
+    Application::getHttpMap().addPath(_url);
 
-    setNext(make_unique<TaskDownloadImages>(_web));
+    setNext<TaskDownloadImages>(_web);
+    setNext<TaskDownloadStyles>(_web);
+    setNext<TaskDownloadLinks>(_web);
+    setNext<TaskDownloadPage>(_web);
 
     TaskBase::process();
 }

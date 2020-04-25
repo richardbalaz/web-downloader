@@ -8,24 +8,28 @@
 class HttpPath
 {
 public:
-    HttpPath(string path, const HttpPath * prevPath = nullptr);
+    HttpPath(string path, const optional<HttpPath> & prevPath = nullopt);
 
 public:
     auto getHostname() const -> const string &;
     auto getUri() const -> const string &;
 
+    auto hostnameDiffersFromPrev() const -> bool;
+
+public:
+    auto operator==(const HttpPath & other) const -> bool;
+
 private:
+    auto extractHostname(const optional<HttpPath> & = nullopt) -> bool;
+    auto extractUri(const optional<HttpPath> & = nullopt) -> bool;
+
     auto isAbsolute() const -> bool;
-
-    auto extractHostname() -> bool;
-    auto extractUri() -> bool;
-
 private:
     string _path;
     string _hostname;
     string _uri;
 
-    const HttpPath * _prevPath;
+    optional<bool> _hostnameDiffersFromPrev;
 };
 
 #endif //WEB_DOWNLOADER_HTTPPATH_H

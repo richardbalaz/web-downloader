@@ -120,10 +120,46 @@
 		<Unit filename="/Users/richardbalaz/Projects/web-downloader/src/Http/HttpClient.h">
 			<Option target="web_downloader"/>
 		</Unit>
+		<Unit filename="/Users/richardbalaz/Projects/web-downloader/src/Http/HttpMap.cpp">
+			<Option target="web_downloader"/>
+		</Unit>
+		<Unit filename="/Users/richardbalaz/Projects/web-downloader/src/Http/HttpMap.h">
+			<Option target="web_downloader"/>
+		</Unit>
 		<Unit filename="/Users/richardbalaz/Projects/web-downloader/src/Http/HttpPath.cpp">
 			<Option target="web_downloader"/>
 		</Unit>
 		<Unit filename="/Users/richardbalaz/Projects/web-downloader/src/Http/HttpPath.h">
+			<Option target="web_downloader"/>
+		</Unit>
+		<Unit filename="/Users/richardbalaz/Projects/web-downloader/src/Task/File/TaskDownloadFile.cpp">
+			<Option target="web_downloader"/>
+		</Unit>
+		<Unit filename="/Users/richardbalaz/Projects/web-downloader/src/Task/File/TaskDownloadFile.h">
+			<Option target="web_downloader"/>
+		</Unit>
+		<Unit filename="/Users/richardbalaz/Projects/web-downloader/src/Task/File/TaskSaveFile.cpp">
+			<Option target="web_downloader"/>
+		</Unit>
+		<Unit filename="/Users/richardbalaz/Projects/web-downloader/src/Task/File/TaskSaveFile.h">
+			<Option target="web_downloader"/>
+		</Unit>
+		<Unit filename="/Users/richardbalaz/Projects/web-downloader/src/Task/Image/TaskDownloadImages.cpp">
+			<Option target="web_downloader"/>
+		</Unit>
+		<Unit filename="/Users/richardbalaz/Projects/web-downloader/src/Task/Image/TaskDownloadImages.h">
+			<Option target="web_downloader"/>
+		</Unit>
+		<Unit filename="/Users/richardbalaz/Projects/web-downloader/src/Task/Style/TaskDownloadStyle.cpp">
+			<Option target="web_downloader"/>
+		</Unit>
+		<Unit filename="/Users/richardbalaz/Projects/web-downloader/src/Task/Style/TaskDownloadStyle.h">
+			<Option target="web_downloader"/>
+		</Unit>
+		<Unit filename="/Users/richardbalaz/Projects/web-downloader/src/Task/Style/TaskDownloadStyles.cpp">
+			<Option target="web_downloader"/>
+		</Unit>
+		<Unit filename="/Users/richardbalaz/Projects/web-downloader/src/Task/Style/TaskDownloadStyles.h">
 			<Option target="web_downloader"/>
 		</Unit>
 		<Unit filename="/Users/richardbalaz/Projects/web-downloader/src/Task/Task.cpp">
@@ -138,16 +174,16 @@
 		<Unit filename="/Users/richardbalaz/Projects/web-downloader/src/Task/TaskBase.h">
 			<Option target="web_downloader"/>
 		</Unit>
-		<Unit filename="/Users/richardbalaz/Projects/web-downloader/src/Task/TaskDownloadFile.cpp">
+		<Unit filename="/Users/richardbalaz/Projects/web-downloader/src/Task/TaskDownloadLinks.cpp">
 			<Option target="web_downloader"/>
 		</Unit>
-		<Unit filename="/Users/richardbalaz/Projects/web-downloader/src/Task/TaskDownloadFile.h">
+		<Unit filename="/Users/richardbalaz/Projects/web-downloader/src/Task/TaskDownloadLinks.h">
 			<Option target="web_downloader"/>
 		</Unit>
-		<Unit filename="/Users/richardbalaz/Projects/web-downloader/src/Task/TaskDownloadImages.cpp">
+		<Unit filename="/Users/richardbalaz/Projects/web-downloader/src/Task/TaskDownloadPage.cpp">
 			<Option target="web_downloader"/>
 		</Unit>
-		<Unit filename="/Users/richardbalaz/Projects/web-downloader/src/Task/TaskDownloadImages.h">
+		<Unit filename="/Users/richardbalaz/Projects/web-downloader/src/Task/TaskDownloadPage.h">
 			<Option target="web_downloader"/>
 		</Unit>
 		<Unit filename="/Users/richardbalaz/Projects/web-downloader/src/Task/TaskDownloadWeb.cpp">

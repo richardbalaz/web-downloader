@@ -4,7 +4,7 @@
 
 #include <precomp.h>
 #include "TaskDownloadImages.h"
-#include "TaskDownloadFile.h"
+#include "Task/File/TaskDownloadFile.h"
 #include <Html/Html.h>
 
 TaskDownloadImages::TaskDownloadImages(shared_ptr<Html> web)
@@ -17,7 +17,12 @@ auto TaskDownloadImages::process() -> void
 
     for(const auto & img : _web->search("img"))
     {
-        HttpPath url(img.property("src"), &_web->url());
+        HttpPath url(img.property("src"), _web->url());
+
+        if(url.hostnameDiffersFromPrev() || Application::getHttpMap().hasPath(url))
+            continue;
+
+        Application::getHttpMap().addPath(url);
         setNext(make_unique<TaskDownloadFile>(url));
 
         cout << "image" << endl;

@@ -6,7 +6,7 @@
 #define WEB_DOWNLOADER_TASKDOWNLOADIMAGES_H
 
 
-#include "TaskBase.h"
+#include "Task/TaskBase.h"
 
 class Html;
 

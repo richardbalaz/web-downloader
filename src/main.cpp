@@ -7,15 +7,18 @@
 
 int main(int argc, char * argv[])
 {
-    if(argc == 2)
+    if(argc == 3)
     {
         string url(argv[1]);
+        string output(argv[2]);
 
-        TaskDownloadWeb dw("http://192.168.2.249/MSMain/");
+        Application::setOutputFolder("/Users/richardbalaz/Documents/web");
+
+        TaskDownloadWeb dw({ "http://localhost/" });
         dw.process();
     }
     else
-        cerr << "Missing url" << endl;
+        cerr << "Missing url or output path" << endl;
 
     return 0;
 }

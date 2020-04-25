@@ -11,7 +11,7 @@
 class TaskDownloadWeb : public TaskBase
 {
 public:
-    explicit TaskDownloadWeb(string url);
+    explicit TaskDownloadWeb(HttpPath url);
     ~TaskDownloadWeb() override {};
 
 public:
