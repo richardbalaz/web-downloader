@@ -13,14 +13,14 @@ TaskDownloadPage::TaskDownloadPage(shared_ptr<Html> page)
 
 void TaskDownloadPage::process()
 {
-    cout << "download page '" << _page->url().getHostname() << "' uri: '" << _page->url().getUri() << "'" << endl;
+    cout << "download page '" << _page->getUrl().getHostname() << "' uri: '" << _page->getUrl().getUri() << "'" << endl;
 
-    string outputFile = Application::getOutputFolder() + _page->url().getUri() + "_index.html";
+    string outputFile = Application::getOutputFolder() + _page->getUrl().getUri();
 
     filesystem::path outputPath(outputFile);
     filesystem::create_directories(outputPath.parent_path());
 
-    HtmlDumper::save(_page->doc(), outputFile);
+    HtmlDumper::save(_page->getDoc(), outputFile);
 
     TaskBase::process();
 }

@@ -14,11 +14,9 @@ TaskDownloadStyles::TaskDownloadStyles(shared_ptr<Html> web)
 
 auto TaskDownloadStyles::process() -> void
 {
-    cout << "download styles" << endl;
-
     for(const auto & img : _web->search("link"))
     {
-        HttpPath url(img.property("href"), _web->url());
+        HttpPath url(img.getProperty("href"), _web->getUrl());
 
         if(url.hostnameDiffersFromPrev() || Application::getHttpMap().hasPath(url))
             continue;

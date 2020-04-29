@@ -18,7 +18,7 @@ Html::~Html()
     xmlCleanupParser();
 }
 
-htmlDocPtr Html::doc() const
+htmlDocPtr Html::getDoc() const
 {
     return _document;
 }
@@ -46,7 +46,7 @@ auto Html::search_impl(xmlNode *node, const std::function<bool(xmlNode *)> & isM
     }
 }
 
-auto Html::url() const -> const HttpPath &
+auto Html::getUrl() const -> const HttpPath &
 {
     return _url;
 }
@@ -55,7 +55,7 @@ HtmlNode::HtmlNode(xmlNode *node)
     : _node(node)
 {}
 
-auto HtmlNode::property(const string &name) const -> string
+auto HtmlNode::getProperty(const string &name) const -> string
 {
     if(xmlHasProp(_node, (xmlChar *) name.c_str()) == nullptr)
         return {};
@@ -64,4 +64,12 @@ auto HtmlNode::property(const string &name) const -> string
     string propStr((char *) prop);
     xmlFree(prop);
     return propStr;
+}
+
+auto HtmlNode::setProperty(const string &name, const string & content) -> void
+{
+    if(xmlHasProp(_node, (xmlChar *) name.c_str()) == nullptr)
+        return;
+
+    xmlSetProp(_node, (xmlChar *) name.c_str(), (xmlChar *) content.c_str());
 }

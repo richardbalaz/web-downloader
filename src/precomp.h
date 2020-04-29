@@ -15,9 +15,12 @@
 #include <fstream>
 #include <regex>
 #include <optional>
+#include <sstream>
+#include <queue>
 
 using namespace std;
 
 #include <Application.h>
+#include <Enum.h>
 
 #endif //WEB_DOWNLOADER_PRECOMP_H

@@ -8,9 +8,11 @@
 #include <libxml/HTMLparser.h>
 #include <libxml/HTMLtree.h>
 
+// Html building interface for libxml2
 class HtmlDumper
 {
 public:
+    // Save Html tree's content into target file
     static auto save(htmlDocPtr document, const string & targetPath) -> void;
 };
 

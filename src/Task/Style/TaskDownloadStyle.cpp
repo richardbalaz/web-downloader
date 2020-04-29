@@ -17,12 +17,12 @@ auto TaskDownloadStyle::process() -> void
 {
     string stylesheet = Application::getHttpClient().getContent(_url);
 
-    regex isFileInUrl("url\\((.*?)\\)");
+    regex isFileInUrl("getUrl\\((.*?)\\)");
 
     for(auto it = sregex_iterator(stylesheet.begin(), stylesheet.end(), isFileInUrl); it != sregex_iterator(); ++it)
     {
         string fileInUrl = it->str();
-        // erase url(
+        // erase getUrl(
         fileInUrl.erase(0, 4);
         // erase )
         fileInUrl.pop_back();

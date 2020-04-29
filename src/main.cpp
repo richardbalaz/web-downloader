@@ -13,12 +13,15 @@ int main(int argc, char * argv[])
         string output(argv[2]);
 
         Application::setOutputFolder("/Users/richardbalaz/Documents/web");
+        Application::setMaxDepth(0);
+        Application::setLocalImagesEnabled(true);
+        Application::setNotFoundForExcessiveDepthEnabled(true);
 
         TaskDownloadWeb dw({ "http://localhost/" });
         dw.process();
     }
     else
-        cerr << "Missing url or output path" << endl;
+        cerr << "Missing getUrl or output path" << endl;
 
     return 0;
 }

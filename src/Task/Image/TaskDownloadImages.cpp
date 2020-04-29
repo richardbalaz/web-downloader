@@ -13,19 +13,18 @@ TaskDownloadImages::TaskDownloadImages(shared_ptr<Html> web)
 
 auto TaskDownloadImages::process() -> void
 {
-    cout << "download images" << endl;
+    if(!Application::isLocalImagesEnabled())
+        return;
 
     for(const auto & img : _web->search("img"))
     {
-        HttpPath url(img.property("src"), _web->url());
+        HttpPath url(img.getProperty("src"), _web->getUrl());
 
         if(url.hostnameDiffersFromPrev() || Application::getHttpMap().hasPath(url))
             continue;
 
         Application::getHttpMap().addPath(url);
-        setNext(make_unique<TaskDownloadFile>(url));
-
-        cout << "image" << endl;
+        setNext<TaskDownloadFile>(url);
     }
 
     TaskBase::process();

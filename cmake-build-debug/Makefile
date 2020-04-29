@@ -150,6 +150,33 @@ src/Application.cpp.s:
 	$(MAKE) -f CMakeFiles/web_downloader.dir/build.make CMakeFiles/web_downloader.dir/src/Application.cpp.s
 .PHONY : src/Application.cpp.s
 
+src/Html/Custom/HtmlNotFound.o: src/Html/Custom/HtmlNotFound.cpp.o
+
+.PHONY : src/Html/Custom/HtmlNotFound.o
+
+# target to build an object file
+src/Html/Custom/HtmlNotFound.cpp.o:
+	$(MAKE) -f CMakeFiles/web_downloader.dir/build.make CMakeFiles/web_downloader.dir/src/Html/Custom/HtmlNotFound.cpp.o
+.PHONY : src/Html/Custom/HtmlNotFound.cpp.o
+
+src/Html/Custom/HtmlNotFound.i: src/Html/Custom/HtmlNotFound.cpp.i
+
+.PHONY : src/Html/Custom/HtmlNotFound.i
+
+# target to preprocess a source file
+src/Html/Custom/HtmlNotFound.cpp.i:
+	$(MAKE) -f CMakeFiles/web_downloader.dir/build.make CMakeFiles/web_downloader.dir/src/Html/Custom/HtmlNotFound.cpp.i
+.PHONY : src/Html/Custom/HtmlNotFound.cpp.i
+
+src/Html/Custom/HtmlNotFound.s: src/Html/Custom/HtmlNotFound.cpp.s
+
+.PHONY : src/Html/Custom/HtmlNotFound.s
+
+# target to generate assembly for a file
+src/Html/Custom/HtmlNotFound.cpp.s:
+	$(MAKE) -f CMakeFiles/web_downloader.dir/build.make CMakeFiles/web_downloader.dir/src/Html/Custom/HtmlNotFound.cpp.s
+.PHONY : src/Html/Custom/HtmlNotFound.cpp.s
+
 src/Html/Html.o: src/Html/Html.cpp.o
 
 .PHONY : src/Html/Html.o
@@ -339,6 +366,33 @@ src/Http/HttpPath.cpp.s:
 	$(MAKE) -f CMakeFiles/web_downloader.dir/build.make CMakeFiles/web_downloader.dir/src/Http/HttpPath.cpp.s
 .PHONY : src/Http/HttpPath.cpp.s
 
+src/Task/404/TaskSaveNotFoundPage.o: src/Task/404/TaskSaveNotFoundPage.cpp.o
+
+.PHONY : src/Task/404/TaskSaveNotFoundPage.o
+
+# target to build an object file
+src/Task/404/TaskSaveNotFoundPage.cpp.o:
+	$(MAKE) -f CMakeFiles/web_downloader.dir/build.make CMakeFiles/web_downloader.dir/src/Task/404/TaskSaveNotFoundPage.cpp.o
+.PHONY : src/Task/404/TaskSaveNotFoundPage.cpp.o
+
+src/Task/404/TaskSaveNotFoundPage.i: src/Task/404/TaskSaveNotFoundPage.cpp.i
+
+.PHONY : src/Task/404/TaskSaveNotFoundPage.i
+
+# target to preprocess a source file
+src/Task/404/TaskSaveNotFoundPage.cpp.i:
+	$(MAKE) -f CMakeFiles/web_downloader.dir/build.make CMakeFiles/web_downloader.dir/src/Task/404/TaskSaveNotFoundPage.cpp.i
+.PHONY : src/Task/404/TaskSaveNotFoundPage.cpp.i
+
+src/Task/404/TaskSaveNotFoundPage.s: src/Task/404/TaskSaveNotFoundPage.cpp.s
+
+.PHONY : src/Task/404/TaskSaveNotFoundPage.s
+
+# target to generate assembly for a file
+src/Task/404/TaskSaveNotFoundPage.cpp.s:
+	$(MAKE) -f CMakeFiles/web_downloader.dir/build.make CMakeFiles/web_downloader.dir/src/Task/404/TaskSaveNotFoundPage.cpp.s
+.PHONY : src/Task/404/TaskSaveNotFoundPage.cpp.s
+
 src/Task/File/TaskDownloadFile.o: src/Task/File/TaskDownloadFile.cpp.o
 
 .PHONY : src/Task/File/TaskDownloadFile.o
@@ -419,6 +473,33 @@ src/Task/Image/TaskDownloadImages.s: src/Task/Image/TaskDownloadImages.cpp.s
 src/Task/Image/TaskDownloadImages.cpp.s:
 	$(MAKE) -f CMakeFiles/web_downloader.dir/build.make CMakeFiles/web_downloader.dir/src/Task/Image/TaskDownloadImages.cpp.s
 .PHONY : src/Task/Image/TaskDownloadImages.cpp.s
+
+src/Task/Image/TaskModifyImageLinks.o: src/Task/Image/TaskModifyImageLinks.cpp.o
+
+.PHONY : src/Task/Image/TaskModifyImageLinks.o
+
+# target to build an object file
+src/Task/Image/TaskModifyImageLinks.cpp.o:
+	$(MAKE) -f CMakeFiles/web_downloader.dir/build.make CMakeFiles/web_downloader.dir/src/Task/Image/TaskModifyImageLinks.cpp.o
+.PHONY : src/Task/Image/TaskModifyImageLinks.cpp.o
+
+src/Task/Image/TaskModifyImageLinks.i: src/Task/Image/TaskModifyImageLinks.cpp.i
+
+.PHONY : src/Task/Image/TaskModifyImageLinks.i
+
+# target to preprocess a source file
+src/Task/Image/TaskModifyImageLinks.cpp.i:
+	$(MAKE) -f CMakeFiles/web_downloader.dir/build.make CMakeFiles/web_downloader.dir/src/Task/Image/TaskModifyImageLinks.cpp.i
+.PHONY : src/Task/Image/TaskModifyImageLinks.cpp.i
+
+src/Task/Image/TaskModifyImageLinks.s: src/Task/Image/TaskModifyImageLinks.cpp.s
+
+.PHONY : src/Task/Image/TaskModifyImageLinks.s
+
+# target to generate assembly for a file
+src/Task/Image/TaskModifyImageLinks.cpp.s:
+	$(MAKE) -f CMakeFiles/web_downloader.dir/build.make CMakeFiles/web_downloader.dir/src/Task/Image/TaskModifyImageLinks.cpp.s
+.PHONY : src/Task/Image/TaskModifyImageLinks.cpp.s
 
 src/Task/Style/TaskDownloadStyle.o: src/Task/Style/TaskDownloadStyle.cpp.o
 
@@ -636,6 +717,33 @@ src/Task/TaskModifyLinks.cpp.s:
 	$(MAKE) -f CMakeFiles/web_downloader.dir/build.make CMakeFiles/web_downloader.dir/src/Task/TaskModifyLinks.cpp.s
 .PHONY : src/Task/TaskModifyLinks.cpp.s
 
+src/Task/TaskModifyPageLinks.o: src/Task/TaskModifyPageLinks.cpp.o
+
+.PHONY : src/Task/TaskModifyPageLinks.o
+
+# target to build an object file
+src/Task/TaskModifyPageLinks.cpp.o:
+	$(MAKE) -f CMakeFiles/web_downloader.dir/build.make CMakeFiles/web_downloader.dir/src/Task/TaskModifyPageLinks.cpp.o
+.PHONY : src/Task/TaskModifyPageLinks.cpp.o
+
+src/Task/TaskModifyPageLinks.i: src/Task/TaskModifyPageLinks.cpp.i
+
+.PHONY : src/Task/TaskModifyPageLinks.i
+
+# target to preprocess a source file
+src/Task/TaskModifyPageLinks.cpp.i:
+	$(MAKE) -f CMakeFiles/web_downloader.dir/build.make CMakeFiles/web_downloader.dir/src/Task/TaskModifyPageLinks.cpp.i
+.PHONY : src/Task/TaskModifyPageLinks.cpp.i
+
+src/Task/TaskModifyPageLinks.s: src/Task/TaskModifyPageLinks.cpp.s
+
+.PHONY : src/Task/TaskModifyPageLinks.s
+
+# target to generate assembly for a file
+src/Task/TaskModifyPageLinks.cpp.s:
+	$(MAKE) -f CMakeFiles/web_downloader.dir/build.make CMakeFiles/web_downloader.dir/src/Task/TaskModifyPageLinks.cpp.s
+.PHONY : src/Task/TaskModifyPageLinks.cpp.s
+
 src/main.o: src/main.cpp.o
 
 .PHONY : src/main.o
@@ -675,6 +783,9 @@ help:
 	@echo "... src/Application.o"
 	@echo "... src/Application.i"
 	@echo "... src/Application.s"
+	@echo "... src/Html/Custom/HtmlNotFound.o"
+	@echo "... src/Html/Custom/HtmlNotFound.i"
+	@echo "... src/Html/Custom/HtmlNotFound.s"
 	@echo "... src/Html/Html.o"
 	@echo "... src/Html/Html.i"
 	@echo "... src/Html/Html.s"
@@ -696,6 +807,9 @@ help:
 	@echo "... src/Http/HttpPath.o"
 	@echo "... src/Http/HttpPath.i"
 	@echo "... src/Http/HttpPath.s"
+	@echo "... src/Task/404/TaskSaveNotFoundPage.o"
+	@echo "... src/Task/404/TaskSaveNotFoundPage.i"
+	@echo "... src/Task/404/TaskSaveNotFoundPage.s"
 	@echo "... src/Task/File/TaskDownloadFile.o"
 	@echo "... src/Task/File/TaskDownloadFile.i"
 	@echo "... src/Task/File/TaskDownloadFile.s"
@@ -705,6 +819,9 @@ help:
 	@echo "... src/Task/Image/TaskDownloadImages.o"
 	@echo "... src/Task/Image/TaskDownloadImages.i"
 	@echo "... src/Task/Image/TaskDownloadImages.s"
+	@echo "... src/Task/Image/TaskModifyImageLinks.o"
+	@echo "... src/Task/Image/TaskModifyImageLinks.i"
+	@echo "... src/Task/Image/TaskModifyImageLinks.s"
 	@echo "... src/Task/Style/TaskDownloadStyle.o"
 	@echo "... src/Task/Style/TaskDownloadStyle.i"
 	@echo "... src/Task/Style/TaskDownloadStyle.s"
@@ -729,6 +846,9 @@ help:
 	@echo "... src/Task/TaskModifyLinks.o"
 	@echo "... src/Task/TaskModifyLinks.i"
 	@echo "... src/Task/TaskModifyLinks.s"
+	@echo "... src/Task/TaskModifyPageLinks.o"
+	@echo "... src/Task/TaskModifyPageLinks.i"
+	@echo "... src/Task/TaskModifyPageLinks.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

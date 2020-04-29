@@ -6,16 +6,27 @@
 #define WEB_DOWNLOADER_TASKMODIFYLINKS_H
 
 
-#include "TaskBase.h"
+#include "Task/TaskBase.h"
+
+class Html;
 
 class TaskModifyLinks : public TaskBase
 {
 public:
-    TaskModifyLinks();
-    ~TaskModifyLinks() override;
+    explicit TaskModifyLinks(shared_ptr<Html> page, ELocationType placement);
+    ~TaskModifyLinks() override {};
 
 public:
     auto process() -> void override;
+
+protected:
+    virtual auto getNodeName() -> string = 0;
+    virtual auto getAttrName() -> string = 0;
+
+private:
+    shared_ptr<Html> _page;
+
+    ELocationType _placement;
 };
 
 

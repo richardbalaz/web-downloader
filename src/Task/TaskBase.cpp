@@ -10,19 +10,19 @@ TaskBase::TaskBase()
 
 TaskBase::~TaskBase() = default;
 
-auto TaskBase::setNext(unique_ptr<Task> task) -> Task &
+auto TaskBase::setNext_impl(unique_ptr<Task> task) -> Task &
 {
-    _nextTasks.emplace_back(move(task));
+    _nextTasks.emplace(move(task));
     return *_nextTasks.back();
 }
 
 auto TaskBase::process() -> void
 {
-    if(_nextTasks.empty())
-        return;
-
-    for(auto & task : _nextTasks)
-        task->process();
+    while(!_nextTasks.empty())
+    {
+        _nextTasks.front()->process();
+        _nextTasks.pop();
+    }
 }
 
 

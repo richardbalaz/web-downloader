@@ -317,6 +317,58 @@ CMakeFiles/web_downloader.dir/src/Http/HttpMap.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/web_downloader.dir/src/Http/HttpMap.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/richardbalaz/Projects/web-downloader/src/Http/HttpMap.cpp -o CMakeFiles/web_downloader.dir/src/Http/HttpMap.cpp.s
 
+CMakeFiles/web_downloader.dir/src/Task/Image/TaskModifyImageLinks.cpp.o: CMakeFiles/web_downloader.dir/flags.make
+CMakeFiles/web_downloader.dir/src/Task/Image/TaskModifyImageLinks.cpp.o: ../src/Task/Image/TaskModifyImageLinks.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/richardbalaz/Projects/web-downloader/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/web_downloader.dir/src/Task/Image/TaskModifyImageLinks.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/web_downloader.dir/src/Task/Image/TaskModifyImageLinks.cpp.o -c /Users/richardbalaz/Projects/web-downloader/src/Task/Image/TaskModifyImageLinks.cpp
+
+CMakeFiles/web_downloader.dir/src/Task/Image/TaskModifyImageLinks.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/web_downloader.dir/src/Task/Image/TaskModifyImageLinks.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/richardbalaz/Projects/web-downloader/src/Task/Image/TaskModifyImageLinks.cpp > CMakeFiles/web_downloader.dir/src/Task/Image/TaskModifyImageLinks.cpp.i
+
+CMakeFiles/web_downloader.dir/src/Task/Image/TaskModifyImageLinks.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/web_downloader.dir/src/Task/Image/TaskModifyImageLinks.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/richardbalaz/Projects/web-downloader/src/Task/Image/TaskModifyImageLinks.cpp -o CMakeFiles/web_downloader.dir/src/Task/Image/TaskModifyImageLinks.cpp.s
+
+CMakeFiles/web_downloader.dir/src/Task/TaskModifyPageLinks.cpp.o: CMakeFiles/web_downloader.dir/flags.make
+CMakeFiles/web_downloader.dir/src/Task/TaskModifyPageLinks.cpp.o: ../src/Task/TaskModifyPageLinks.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/richardbalaz/Projects/web-downloader/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/web_downloader.dir/src/Task/TaskModifyPageLinks.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/web_downloader.dir/src/Task/TaskModifyPageLinks.cpp.o -c /Users/richardbalaz/Projects/web-downloader/src/Task/TaskModifyPageLinks.cpp
+
+CMakeFiles/web_downloader.dir/src/Task/TaskModifyPageLinks.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/web_downloader.dir/src/Task/TaskModifyPageLinks.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/richardbalaz/Projects/web-downloader/src/Task/TaskModifyPageLinks.cpp > CMakeFiles/web_downloader.dir/src/Task/TaskModifyPageLinks.cpp.i
+
+CMakeFiles/web_downloader.dir/src/Task/TaskModifyPageLinks.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/web_downloader.dir/src/Task/TaskModifyPageLinks.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/richardbalaz/Projects/web-downloader/src/Task/TaskModifyPageLinks.cpp -o CMakeFiles/web_downloader.dir/src/Task/TaskModifyPageLinks.cpp.s
+
+CMakeFiles/web_downloader.dir/src/Html/Custom/HtmlNotFound.cpp.o: CMakeFiles/web_downloader.dir/flags.make
+CMakeFiles/web_downloader.dir/src/Html/Custom/HtmlNotFound.cpp.o: ../src/Html/Custom/HtmlNotFound.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/richardbalaz/Projects/web-downloader/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/web_downloader.dir/src/Html/Custom/HtmlNotFound.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/web_downloader.dir/src/Html/Custom/HtmlNotFound.cpp.o -c /Users/richardbalaz/Projects/web-downloader/src/Html/Custom/HtmlNotFound.cpp
+
+CMakeFiles/web_downloader.dir/src/Html/Custom/HtmlNotFound.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/web_downloader.dir/src/Html/Custom/HtmlNotFound.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/richardbalaz/Projects/web-downloader/src/Html/Custom/HtmlNotFound.cpp > CMakeFiles/web_downloader.dir/src/Html/Custom/HtmlNotFound.cpp.i
+
+CMakeFiles/web_downloader.dir/src/Html/Custom/HtmlNotFound.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/web_downloader.dir/src/Html/Custom/HtmlNotFound.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/richardbalaz/Projects/web-downloader/src/Html/Custom/HtmlNotFound.cpp -o CMakeFiles/web_downloader.dir/src/Html/Custom/HtmlNotFound.cpp.s
+
+CMakeFiles/web_downloader.dir/src/Task/404/TaskSaveNotFoundPage.cpp.o: CMakeFiles/web_downloader.dir/flags.make
+CMakeFiles/web_downloader.dir/src/Task/404/TaskSaveNotFoundPage.cpp.o: ../src/Task/404/TaskSaveNotFoundPage.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/richardbalaz/Projects/web-downloader/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/web_downloader.dir/src/Task/404/TaskSaveNotFoundPage.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/web_downloader.dir/src/Task/404/TaskSaveNotFoundPage.cpp.o -c /Users/richardbalaz/Projects/web-downloader/src/Task/404/TaskSaveNotFoundPage.cpp
+
+CMakeFiles/web_downloader.dir/src/Task/404/TaskSaveNotFoundPage.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/web_downloader.dir/src/Task/404/TaskSaveNotFoundPage.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/richardbalaz/Projects/web-downloader/src/Task/404/TaskSaveNotFoundPage.cpp > CMakeFiles/web_downloader.dir/src/Task/404/TaskSaveNotFoundPage.cpp.i
+
+CMakeFiles/web_downloader.dir/src/Task/404/TaskSaveNotFoundPage.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/web_downloader.dir/src/Task/404/TaskSaveNotFoundPage.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/richardbalaz/Projects/web-downloader/src/Task/404/TaskSaveNotFoundPage.cpp -o CMakeFiles/web_downloader.dir/src/Task/404/TaskSaveNotFoundPage.cpp.s
+
 # Object files for target web_downloader
 web_downloader_OBJECTS = \
 "CMakeFiles/web_downloader.dir/src/main.cpp.o" \
@@ -338,7 +390,11 @@ web_downloader_OBJECTS = \
 "CMakeFiles/web_downloader.dir/src/Task/Style/TaskDownloadStyle.cpp.o" \
 "CMakeFiles/web_downloader.dir/src/Task/File/TaskSaveFile.cpp.o" \
 "CMakeFiles/web_downloader.dir/src/Task/TaskDownloadLinks.cpp.o" \
-"CMakeFiles/web_downloader.dir/src/Http/HttpMap.cpp.o"
+"CMakeFiles/web_downloader.dir/src/Http/HttpMap.cpp.o" \
+"CMakeFiles/web_downloader.dir/src/Task/Image/TaskModifyImageLinks.cpp.o" \
+"CMakeFiles/web_downloader.dir/src/Task/TaskModifyPageLinks.cpp.o" \
+"CMakeFiles/web_downloader.dir/src/Html/Custom/HtmlNotFound.cpp.o" \
+"CMakeFiles/web_downloader.dir/src/Task/404/TaskSaveNotFoundPage.cpp.o"
 
 # External object files for target web_downloader
 web_downloader_EXTERNAL_OBJECTS =
@@ -363,10 +419,14 @@ web_downloader: CMakeFiles/web_downloader.dir/src/Task/Style/TaskDownloadStyle.c
 web_downloader: CMakeFiles/web_downloader.dir/src/Task/File/TaskSaveFile.cpp.o
 web_downloader: CMakeFiles/web_downloader.dir/src/Task/TaskDownloadLinks.cpp.o
 web_downloader: CMakeFiles/web_downloader.dir/src/Http/HttpMap.cpp.o
+web_downloader: CMakeFiles/web_downloader.dir/src/Task/Image/TaskModifyImageLinks.cpp.o
+web_downloader: CMakeFiles/web_downloader.dir/src/Task/TaskModifyPageLinks.cpp.o
+web_downloader: CMakeFiles/web_downloader.dir/src/Html/Custom/HtmlNotFound.cpp.o
+web_downloader: CMakeFiles/web_downloader.dir/src/Task/404/TaskSaveNotFoundPage.cpp.o
 web_downloader: CMakeFiles/web_downloader.dir/build.make
 web_downloader: /usr/lib/libxml2.dylib
 web_downloader: CMakeFiles/web_downloader.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/richardbalaz/Projects/web-downloader/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Linking CXX executable web_downloader"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/richardbalaz/Projects/web-downloader/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Linking CXX executable web_downloader"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/web_downloader.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

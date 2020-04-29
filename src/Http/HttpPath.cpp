@@ -90,9 +90,6 @@ auto HttpPath::extractUri(const optional<HttpPath> & prevPath) -> bool
         _uri = string(prevPath->getUri().begin(), prevPath->getUri().begin() + lastSlashPos + 1) + path;
     }
 
-    /*if(_uri.back() == '/' && _uri.length() > 1)
-        _uri.pop_back();*/
-
     return !_uri.empty();
 }
 
@@ -104,4 +101,9 @@ auto HttpPath::hostnameDiffersFromPrev() const -> bool
 auto HttpPath::operator==(const HttpPath &other) const -> bool
 {
     return getHostname() == other.getHostname() && getUri() == other.getUri();
+}
+
+auto HttpPath::getHttpUrl() const -> string
+{
+    return "http://" + getHostname() + getUri();
 }

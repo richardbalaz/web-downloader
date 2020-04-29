@@ -7,6 +7,9 @@
 
 class HttpPath;
 
+// Network client for connecting to Http server and getting a response of request
+// Example: getContent({ "http://localhost/index.html" }) -> plain Html
+// Example: getContent({ "http://localhost/image.png" }) -> png binary
 class HttpClient
 {
 public:
@@ -61,9 +64,9 @@ private:
     string _sendDataType;
     string _data;
     bool _ok;
-    int _socket = -1;
+    int _socket {-1};
 
-    int _timeout = 10;
+    int _timeout {10};
 };
 
 #endif //WEB_DOWNLOADER_HTTPCLIENT_H

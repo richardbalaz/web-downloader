@@ -8,11 +8,15 @@
 
 #include <libxml/tree.h>
 
+// Debugging interface for lixml2's Html tree
 class HtmlDebug
 {
 public:
+    // Return true if node doesn't contain any further nodes
     static auto isLeaf(xmlNode * node) -> bool;
+    // Recursive debug-print: node's name and content
     static auto printNode(xmlNode * node, size_t indent) -> void;
+    // Debug-print whole document starting from root
     static auto printDocument(xmlDocPtr document) -> void;
 };
 

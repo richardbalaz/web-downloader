@@ -12,16 +12,12 @@ Http/HttpClient.h
 Http/HttpMap.h
 -
 
+../src/Enum.h
+
 ../src/Html/Html.h
 libxml/HTMLparser.h
 -
 Http/HttpPath.h
--
-
-../src/Html/HtmlDumper.h
-libxml/HTMLparser.h
--
-libxml/HTMLtree.h
 -
 
 ../src/Http/HttpClient.h
@@ -31,6 +27,18 @@ HttpPath.h
 ../src/Http/HttpPath.h
 
 ../src/Http/HttpPath.h
+
+../src/Task/File/TaskDownloadFile.h
+Task/TaskBase.h
+../src/Task/File/Task/TaskBase.h
+Http/HttpPath.h
+-
+
+../src/Task/Task.h
+
+../src/Task/TaskBase.h
+Task.h
+../src/Task/Task.h
 
 ../src/precomp.h
 iostream
@@ -53,7 +61,13 @@ regex
 -
 optional
 -
+sstream
+-
+queue
+-
 Application.h
+-
+Enum.h
 -
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/usr/include/libxml2/libxml/HTMLparser.h
@@ -66,16 +80,6 @@ libxml/parser.h
 libxml/xmlIO.h
 -
 libxml/xmlstring.h
--
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/usr/include/libxml2/libxml/HTMLtree.h
-stdio.h
--
-libxml/xmlversion.h
--
-libxml/tree.h
--
-libxml/HTMLparser.h
 -
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/usr/include/libxml2/libxml/SAX.h
@@ -278,43 +282,17 @@ libxml/xmlexports.h
 ansidecl.h
 -
 
-/Users/richardbalaz/Projects/web-downloader/src/Http/HttpMap.cpp
+/Users/richardbalaz/Projects/web-downloader/src/Task/Image/TaskDownloadImages.cpp
 precomp.h
 -
-HttpMap.h
-/Users/richardbalaz/Projects/web-downloader/src/Http/HttpMap.h
-
-/Users/richardbalaz/Projects/web-downloader/src/Http/HttpMap.h
-HttpPath.h
-/Users/richardbalaz/Projects/web-downloader/src/Http/HttpPath.h
-
-/Users/richardbalaz/Projects/web-downloader/src/Http/HttpPath.h
-
-/Users/richardbalaz/Projects/web-downloader/src/Task/Task.h
-
-/Users/richardbalaz/Projects/web-downloader/src/Task/TaskBase.h
-Task.h
-/Users/richardbalaz/Projects/web-downloader/src/Task/Task.h
-
-/Users/richardbalaz/Projects/web-downloader/src/Task/TaskDownloadLinks.cpp
-precomp.h
--
-TaskDownloadLinks.h
-/Users/richardbalaz/Projects/web-downloader/src/Task/TaskDownloadLinks.h
-TaskDownloadWeb.h
-/Users/richardbalaz/Projects/web-downloader/src/Task/TaskDownloadWeb.h
+TaskDownloadImages.h
+/Users/richardbalaz/Projects/web-downloader/src/Task/Image/TaskDownloadImages.h
+Task/File/TaskDownloadFile.h
+/Users/richardbalaz/Projects/web-downloader/src/Task/Image/Task/File/TaskDownloadFile.h
 Html/Html.h
 -
-Html/HtmlDumper.h
--
 
-/Users/richardbalaz/Projects/web-downloader/src/Task/TaskDownloadLinks.h
-TaskBase.h
-/Users/richardbalaz/Projects/web-downloader/src/Task/TaskBase.h
-
-/Users/richardbalaz/Projects/web-downloader/src/Task/TaskDownloadWeb.h
-TaskBase.h
-/Users/richardbalaz/Projects/web-downloader/src/Task/TaskBase.h
-Http/HttpPath.h
--
+/Users/richardbalaz/Projects/web-downloader/src/Task/Image/TaskDownloadImages.h
+Task/TaskBase.h
+/Users/richardbalaz/Projects/web-downloader/src/Task/Image/Task/TaskBase.h
 
