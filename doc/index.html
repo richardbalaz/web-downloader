@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Web downloader doc</title>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col mt-3">
+            <h1 class="text-center">Web downloader</h1>
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Zadanie</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="documentation.html">Dokumentácia</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="example.html">Príklad</a>
+                </li>
+            </ul>
+            <div class="card">
+                <h5 class="card-header">Zadanie</h5>
+                <div class="card-body">
+                    <p>
+                        Web downloader je nástroj ktorý umožňuje uchovávať zálohu webovú stránku bežiacu na HTTP serveri na lokálny disk.
+                        Nástroj dokáže zázálohovať obsah stránky, obrázky, kaskádové štýly a aj všetky ďalšie stránky na ktoré sa odkazuje.
+                    </p>
+                    <p>
+                        Vstupom pre nástroj je URL webovej stránky ktorá sa má zalohovať a výstupný adresár do ktorého sa bude stránka ukladá.
+                        Ďalej, nástroj umožňuje stanoviť maximálnu hĺbku rekurzívneho sťahovania stránok ktoré sú odkazom. Ďalšími voliteľnými
+                        možnosťami sú volba lokálnych/vzdialených obrázkov a zapnutie odkazovania na "Stránka sa nenašla" pri odkazoch,
+                        ktoré presahujú maximálnu hĺbku sťahovania.
+                    </p>
+                    <p>Web downloader podporuje:</p>
+                    <ul>
+                        <li>pripojenie na HTTP server a následné vyžiadanie si súboru</li>
+                        <li>parsovanie HTML dokumentov na HTML strom</li>
+                        <li>vyhladávanie tagov v HTML strome</li>
+                        <li>generovanie HTML dokumentu z HTML stromu</li>
+                        <li>rekurzívne sťahovanie web stránok</li>
+                        <li>pamätanie si stiahnutých odkazov</li>
+                        <li>viacvláknové sťahovanie obrázkov</li>
+                        <li>sťahovanie kaskádových štýlov a ich závislostí</li>
+                        <li>úprava odkazov na obrázky/štýly/stránky tak, aby smerovali na lokálny/vzdialený súbor</li>
+                        <li>generovanie stránky "Stránka sa nenašla"</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

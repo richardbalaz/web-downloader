@@ -1,0 +1,19 @@
+Web downloader je nástroj ktorý umožňuje uchovávať zálohu webovú stránku bežiacu na HTTP serveri na lokálny disk.
+Nástroj dokáže zázálohovať obsah stránky, obrázky, kaskádové štýly a aj všetky ďalšie stránky na ktoré sa odkazuje.
+
+Vstupom pre nástroj je URL webovej stránky ktorá sa má zalohovať a výstupný adresár do ktorého sa bude stránka ukladá.
+Ďalej, nástroj umožňuje stanoviť maximálnu hĺbku rekurzívneho sťahovania stránok ktoré sú odkazom. Ďalšími voliteľnými
+možnosťami sú volba lokálnych/vzdialených obrázkov a zapnutie odkazovania na "Stránka sa nenašla" pri odkazoch,
+ktoré presahujú maximálnu hĺbku sťahovania.
+
+Web downloader podporuje:
+- pripojenie na HTTP server a následné vyžiadanie si súboru
+- parsovanie HTML dokumentov na HTML strom
+- vyhladávanie tagov v HTML strome
+- generovanie HTML dokumentu z HTML stromu
+- rekurzívne sťahovanie web stránok
+- pamätanie si stiahnutých odkazov
+- sťahovanie obrázkov
+- sťahovanie kaskádových štýlov a ich závislostí
+- úprava odkazov na obrázky/štýly/stránky tak, aby smerovali na lokálny/vzdialený súbor
+- generovanie stránky "Stránka sa nenašla"

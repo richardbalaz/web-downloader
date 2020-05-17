@@ -9,6 +9,7 @@
 #include <Http/HttpPath.h>
 #include "Task/TaskBase.h"
 
+// Save content into local file
 class TaskSaveFile : public TaskBase
 {
 public:

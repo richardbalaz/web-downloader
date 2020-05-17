@@ -20,7 +20,7 @@ public:
     // Return node's name (e.g. index.html)
     auto getName() -> const string &;
     // Return all node's children
-    auto getChildren() -> vector<shared_ptr<HttpMapNode>> &;
+    auto getChildren() -> vector<unique_ptr<HttpMapNode>> &;
 
     // Create a child in current node (child cannot exists)
     auto createChild(const string & name) -> HttpMapNode &;
@@ -32,7 +32,7 @@ public:
 private:
     string _name;
     HttpMapNode * _parent;
-    vector<shared_ptr<HttpMapNode>> _children;
+    vector<unique_ptr<HttpMapNode>> _children;
 };
 
 // Root of Map of Http website
@@ -60,7 +60,7 @@ private:
     auto decompose(const string & path) -> vector<string>;
 
 private:
-    shared_ptr<HttpMapRoot> _root;
+    unique_ptr<HttpMapRoot> _root;
 };
 
 

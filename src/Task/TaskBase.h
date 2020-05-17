@@ -29,13 +29,15 @@ public:
 
     // Process all pending tasks in order (FIFO)
     auto process() -> void override;
+    auto processAsync() -> void override;
 
 private:
     // Add task into queue about to be processed
     auto setNext_impl(unique_ptr<Task> task) -> Task & override;
 
 private:
-    queue<unique_ptr<Task>> _nextTasks;
+    vector<unique_ptr<Task>> _nextTasks;
+    vector<future<void>> _nextTasksFutures;
 };
 
 template<typename TTask, typename... Args>

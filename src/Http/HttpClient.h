@@ -13,60 +13,60 @@ class HttpPath;
 class HttpClient
 {
 public:
-    HttpClient();
+    HttpClient() = default;
     virtual ~HttpClient();
 
-    void setHostname(const string & hostname);
-
-    string getContent(const HttpPath & url);
-public:
-
-    void setPutData(const string & data, const char * type)
-    {
-        _sendData = &data;
-        _sendDataType = type;
-    }
-
-    HttpClient & setTimeout(int seconds) { _timeout = seconds; return *this; }
-
-    HttpClient & sendHttp();
-    HttpClient & readResponse();
-
-    bool ok() const { return _ok; }
-
-    const string & response() const { return _response; }
-
-    const string & data() const { return _data; }
-
-    const string & tillError() const { return _readTillError; }
-    HttpClient & dataTillError(string & tillError) & { tillError = _readTillError; return *this; }
-    HttpClient & dataTillError(string & tillError) && { tillError = std::move(_readTillError); return *this; }
-
+    // Connects to url and return it's content
+    auto getContent(const HttpPath & url) -> string;
 
 private:
-    void setUri(const string & uri);
+    // Set hostname
+    auto setHostname(const string & hostname) -> void;
+    // Set uri
+    auto setUri(const string & uri) -> void;
 
-    bool openSocket();
-    void closeSocket();
+    // Set timeout (time to response)
+    auto setTimeout(int seconds) -> HttpClient &;
 
-    // some socket functions return less-than-zero if invalid
+    // Send Http request
+    auto sendHttp() -> HttpClient &;
+    // Read Http response
+    auto readResponse() -> HttpClient &;
+
+    // Is client ok
+    auto ok() const -> bool;
+
+    // Return response
+    auto response() const -> const string &;
+    // Return data received by server
+    auto data() const -> const string &;
+    // Return data till error
+    auto tillError() const -> const string &;
+
+    // Copy data till error
+    auto dataTillError(string & tillError) -> HttpClient &;
+
+private:
+    // Open socket to hostname
+    auto openSocket() -> bool;
+    // Close currently opened socket
+    auto closeSocket() -> void;
+
+    // Some socket functions return less-than-zero if invalid
     // so this checks whether the return value is valid
-    bool isAlive(int ret) const { return ret >= 0; }
+    auto isAlive(int ret) const -> bool;
 
 private:
-
     string _hostname;
     string _uri;
 
     string _response;
     string _readTillError;
-    const string * _sendData = nullptr;
-    string _sendDataType;
     string _data;
     bool _ok;
-    int _socket {-1};
-
     int _timeout {10};
+
+    int _socket {-1};
 };
 
 #endif //WEB_DOWNLOADER_HTTPCLIENT_H

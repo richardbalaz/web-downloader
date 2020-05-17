@@ -22,11 +22,11 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/richardbalaz/Projects/web-downloader/src/Task/Style/TaskDownloadStyles.cpp" "/Users/richardbalaz/Projects/web-downloader/cmake-build-debug/CMakeFiles/web_downloader.dir/src/Task/Style/TaskDownloadStyles.cpp.o"
   "/Users/richardbalaz/Projects/web-downloader/src/Task/Task.cpp" "/Users/richardbalaz/Projects/web-downloader/cmake-build-debug/CMakeFiles/web_downloader.dir/src/Task/Task.cpp.o"
   "/Users/richardbalaz/Projects/web-downloader/src/Task/TaskBase.cpp" "/Users/richardbalaz/Projects/web-downloader/cmake-build-debug/CMakeFiles/web_downloader.dir/src/Task/TaskBase.cpp.o"
-  "/Users/richardbalaz/Projects/web-downloader/src/Task/TaskDownloadLinks.cpp" "/Users/richardbalaz/Projects/web-downloader/cmake-build-debug/CMakeFiles/web_downloader.dir/src/Task/TaskDownloadLinks.cpp.o"
-  "/Users/richardbalaz/Projects/web-downloader/src/Task/TaskDownloadPage.cpp" "/Users/richardbalaz/Projects/web-downloader/cmake-build-debug/CMakeFiles/web_downloader.dir/src/Task/TaskDownloadPage.cpp.o"
-  "/Users/richardbalaz/Projects/web-downloader/src/Task/TaskDownloadWeb.cpp" "/Users/richardbalaz/Projects/web-downloader/cmake-build-debug/CMakeFiles/web_downloader.dir/src/Task/TaskDownloadWeb.cpp.o"
-  "/Users/richardbalaz/Projects/web-downloader/src/Task/TaskModifyLinks.cpp" "/Users/richardbalaz/Projects/web-downloader/cmake-build-debug/CMakeFiles/web_downloader.dir/src/Task/TaskModifyLinks.cpp.o"
-  "/Users/richardbalaz/Projects/web-downloader/src/Task/TaskModifyPageLinks.cpp" "/Users/richardbalaz/Projects/web-downloader/cmake-build-debug/CMakeFiles/web_downloader.dir/src/Task/TaskModifyPageLinks.cpp.o"
+  "/Users/richardbalaz/Projects/web-downloader/src/Task/Web/TaskDownloadLinks.cpp" "/Users/richardbalaz/Projects/web-downloader/cmake-build-debug/CMakeFiles/web_downloader.dir/src/Task/Web/TaskDownloadLinks.cpp.o"
+  "/Users/richardbalaz/Projects/web-downloader/src/Task/Web/TaskDownloadPage.cpp" "/Users/richardbalaz/Projects/web-downloader/cmake-build-debug/CMakeFiles/web_downloader.dir/src/Task/Web/TaskDownloadPage.cpp.o"
+  "/Users/richardbalaz/Projects/web-downloader/src/Task/Web/TaskDownloadWeb.cpp" "/Users/richardbalaz/Projects/web-downloader/cmake-build-debug/CMakeFiles/web_downloader.dir/src/Task/Web/TaskDownloadWeb.cpp.o"
+  "/Users/richardbalaz/Projects/web-downloader/src/Task/Web/TaskModifyLinks.cpp" "/Users/richardbalaz/Projects/web-downloader/cmake-build-debug/CMakeFiles/web_downloader.dir/src/Task/Web/TaskModifyLinks.cpp.o"
+  "/Users/richardbalaz/Projects/web-downloader/src/Task/Web/TaskModifyPageLinks.cpp" "/Users/richardbalaz/Projects/web-downloader/cmake-build-debug/CMakeFiles/web_downloader.dir/src/Task/Web/TaskModifyPageLinks.cpp.o"
   "/Users/richardbalaz/Projects/web-downloader/src/main.cpp" "/Users/richardbalaz/Projects/web-downloader/cmake-build-debug/CMakeFiles/web_downloader.dir/src/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")

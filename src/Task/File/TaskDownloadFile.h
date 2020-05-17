@@ -8,6 +8,7 @@
 #include "Task/TaskBase.h"
 #include <Http/HttpPath.h>
 
+// Get contents of path and save into local file
 class TaskDownloadFile : public TaskBase
 {
 public:

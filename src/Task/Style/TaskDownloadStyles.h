@@ -11,6 +11,7 @@
 
 class Html;
 
+// Find all stylesheets and download them
 class TaskDownloadStyles : public TaskBase
 {
 public:

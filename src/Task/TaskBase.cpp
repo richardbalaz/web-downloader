@@ -12,17 +12,27 @@ TaskBase::~TaskBase() = default;
 
 auto TaskBase::setNext_impl(unique_ptr<Task> task) -> Task &
 {
-    _nextTasks.emplace(move(task));
+    _nextTasks.emplace_back(move(task));
     return *_nextTasks.back();
 }
 
 auto TaskBase::process() -> void
 {
-    while(!_nextTasks.empty())
-    {
-        _nextTasks.front()->process();
-        _nextTasks.pop();
-    }
+    for(auto & task : _nextTasks)
+        task->process();
+
+    _nextTasks.clear();
+}
+
+auto TaskBase::processAsync() -> void
+{
+    for(auto & task : _nextTasks)
+        _nextTasksFutures.emplace_back(async(launch::async, [&task]() { task->process(); }));
+
+    for(auto & future : _nextTasksFutures)
+        future.wait();
+
+    _nextTasks.clear();
 }
 
 

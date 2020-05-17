@@ -1,27 +1,10 @@
 #include <precomp.h>
-#include <Html/HtmlParser.h>
-#include <Html/HtmlDebug.h>
-#include <Http/HttpPath.h>
-#include <Task/TaskDownloadWeb.h>
 #include "Application.h"
 
 int main(int argc, char * argv[])
 {
-    if(argc == 3)
-    {
-        string url(argv[1]);
-        string output(argv[2]);
-
-        Application::setOutputFolder("/Users/richardbalaz/Documents/web");
-        Application::setMaxDepth(0);
-        Application::setLocalImagesEnabled(true);
-        Application::setNotFoundForExcessiveDepthEnabled(true);
-
-        TaskDownloadWeb dw({ "http://localhost/" });
-        dw.process();
-    }
-    else
-        cerr << "Missing getUrl or output path" << endl;
+    Application::init(argc, argv);
+    Application::run();
 
     return 0;
 }

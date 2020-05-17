@@ -609,140 +609,140 @@ src/Task/TaskBase.cpp.s:
 	$(MAKE) -f CMakeFiles/web_downloader.dir/build.make CMakeFiles/web_downloader.dir/src/Task/TaskBase.cpp.s
 .PHONY : src/Task/TaskBase.cpp.s
 
-src/Task/TaskDownloadLinks.o: src/Task/TaskDownloadLinks.cpp.o
+src/Task/Web/TaskDownloadLinks.o: src/Task/Web/TaskDownloadLinks.cpp.o
 
-.PHONY : src/Task/TaskDownloadLinks.o
-
-# target to build an object file
-src/Task/TaskDownloadLinks.cpp.o:
-	$(MAKE) -f CMakeFiles/web_downloader.dir/build.make CMakeFiles/web_downloader.dir/src/Task/TaskDownloadLinks.cpp.o
-.PHONY : src/Task/TaskDownloadLinks.cpp.o
-
-src/Task/TaskDownloadLinks.i: src/Task/TaskDownloadLinks.cpp.i
-
-.PHONY : src/Task/TaskDownloadLinks.i
-
-# target to preprocess a source file
-src/Task/TaskDownloadLinks.cpp.i:
-	$(MAKE) -f CMakeFiles/web_downloader.dir/build.make CMakeFiles/web_downloader.dir/src/Task/TaskDownloadLinks.cpp.i
-.PHONY : src/Task/TaskDownloadLinks.cpp.i
-
-src/Task/TaskDownloadLinks.s: src/Task/TaskDownloadLinks.cpp.s
-
-.PHONY : src/Task/TaskDownloadLinks.s
-
-# target to generate assembly for a file
-src/Task/TaskDownloadLinks.cpp.s:
-	$(MAKE) -f CMakeFiles/web_downloader.dir/build.make CMakeFiles/web_downloader.dir/src/Task/TaskDownloadLinks.cpp.s
-.PHONY : src/Task/TaskDownloadLinks.cpp.s
-
-src/Task/TaskDownloadPage.o: src/Task/TaskDownloadPage.cpp.o
-
-.PHONY : src/Task/TaskDownloadPage.o
+.PHONY : src/Task/Web/TaskDownloadLinks.o
 
 # target to build an object file
-src/Task/TaskDownloadPage.cpp.o:
-	$(MAKE) -f CMakeFiles/web_downloader.dir/build.make CMakeFiles/web_downloader.dir/src/Task/TaskDownloadPage.cpp.o
-.PHONY : src/Task/TaskDownloadPage.cpp.o
+src/Task/Web/TaskDownloadLinks.cpp.o:
+	$(MAKE) -f CMakeFiles/web_downloader.dir/build.make CMakeFiles/web_downloader.dir/src/Task/Web/TaskDownloadLinks.cpp.o
+.PHONY : src/Task/Web/TaskDownloadLinks.cpp.o
 
-src/Task/TaskDownloadPage.i: src/Task/TaskDownloadPage.cpp.i
+src/Task/Web/TaskDownloadLinks.i: src/Task/Web/TaskDownloadLinks.cpp.i
 
-.PHONY : src/Task/TaskDownloadPage.i
+.PHONY : src/Task/Web/TaskDownloadLinks.i
 
 # target to preprocess a source file
-src/Task/TaskDownloadPage.cpp.i:
-	$(MAKE) -f CMakeFiles/web_downloader.dir/build.make CMakeFiles/web_downloader.dir/src/Task/TaskDownloadPage.cpp.i
-.PHONY : src/Task/TaskDownloadPage.cpp.i
+src/Task/Web/TaskDownloadLinks.cpp.i:
+	$(MAKE) -f CMakeFiles/web_downloader.dir/build.make CMakeFiles/web_downloader.dir/src/Task/Web/TaskDownloadLinks.cpp.i
+.PHONY : src/Task/Web/TaskDownloadLinks.cpp.i
 
-src/Task/TaskDownloadPage.s: src/Task/TaskDownloadPage.cpp.s
+src/Task/Web/TaskDownloadLinks.s: src/Task/Web/TaskDownloadLinks.cpp.s
 
-.PHONY : src/Task/TaskDownloadPage.s
+.PHONY : src/Task/Web/TaskDownloadLinks.s
 
 # target to generate assembly for a file
-src/Task/TaskDownloadPage.cpp.s:
-	$(MAKE) -f CMakeFiles/web_downloader.dir/build.make CMakeFiles/web_downloader.dir/src/Task/TaskDownloadPage.cpp.s
-.PHONY : src/Task/TaskDownloadPage.cpp.s
+src/Task/Web/TaskDownloadLinks.cpp.s:
+	$(MAKE) -f CMakeFiles/web_downloader.dir/build.make CMakeFiles/web_downloader.dir/src/Task/Web/TaskDownloadLinks.cpp.s
+.PHONY : src/Task/Web/TaskDownloadLinks.cpp.s
 
-src/Task/TaskDownloadWeb.o: src/Task/TaskDownloadWeb.cpp.o
+src/Task/Web/TaskDownloadPage.o: src/Task/Web/TaskDownloadPage.cpp.o
 
-.PHONY : src/Task/TaskDownloadWeb.o
+.PHONY : src/Task/Web/TaskDownloadPage.o
 
 # target to build an object file
-src/Task/TaskDownloadWeb.cpp.o:
-	$(MAKE) -f CMakeFiles/web_downloader.dir/build.make CMakeFiles/web_downloader.dir/src/Task/TaskDownloadWeb.cpp.o
-.PHONY : src/Task/TaskDownloadWeb.cpp.o
+src/Task/Web/TaskDownloadPage.cpp.o:
+	$(MAKE) -f CMakeFiles/web_downloader.dir/build.make CMakeFiles/web_downloader.dir/src/Task/Web/TaskDownloadPage.cpp.o
+.PHONY : src/Task/Web/TaskDownloadPage.cpp.o
 
-src/Task/TaskDownloadWeb.i: src/Task/TaskDownloadWeb.cpp.i
+src/Task/Web/TaskDownloadPage.i: src/Task/Web/TaskDownloadPage.cpp.i
 
-.PHONY : src/Task/TaskDownloadWeb.i
+.PHONY : src/Task/Web/TaskDownloadPage.i
 
 # target to preprocess a source file
-src/Task/TaskDownloadWeb.cpp.i:
-	$(MAKE) -f CMakeFiles/web_downloader.dir/build.make CMakeFiles/web_downloader.dir/src/Task/TaskDownloadWeb.cpp.i
-.PHONY : src/Task/TaskDownloadWeb.cpp.i
+src/Task/Web/TaskDownloadPage.cpp.i:
+	$(MAKE) -f CMakeFiles/web_downloader.dir/build.make CMakeFiles/web_downloader.dir/src/Task/Web/TaskDownloadPage.cpp.i
+.PHONY : src/Task/Web/TaskDownloadPage.cpp.i
 
-src/Task/TaskDownloadWeb.s: src/Task/TaskDownloadWeb.cpp.s
+src/Task/Web/TaskDownloadPage.s: src/Task/Web/TaskDownloadPage.cpp.s
 
-.PHONY : src/Task/TaskDownloadWeb.s
+.PHONY : src/Task/Web/TaskDownloadPage.s
 
 # target to generate assembly for a file
-src/Task/TaskDownloadWeb.cpp.s:
-	$(MAKE) -f CMakeFiles/web_downloader.dir/build.make CMakeFiles/web_downloader.dir/src/Task/TaskDownloadWeb.cpp.s
-.PHONY : src/Task/TaskDownloadWeb.cpp.s
+src/Task/Web/TaskDownloadPage.cpp.s:
+	$(MAKE) -f CMakeFiles/web_downloader.dir/build.make CMakeFiles/web_downloader.dir/src/Task/Web/TaskDownloadPage.cpp.s
+.PHONY : src/Task/Web/TaskDownloadPage.cpp.s
 
-src/Task/TaskModifyLinks.o: src/Task/TaskModifyLinks.cpp.o
+src/Task/Web/TaskDownloadWeb.o: src/Task/Web/TaskDownloadWeb.cpp.o
 
-.PHONY : src/Task/TaskModifyLinks.o
+.PHONY : src/Task/Web/TaskDownloadWeb.o
 
 # target to build an object file
-src/Task/TaskModifyLinks.cpp.o:
-	$(MAKE) -f CMakeFiles/web_downloader.dir/build.make CMakeFiles/web_downloader.dir/src/Task/TaskModifyLinks.cpp.o
-.PHONY : src/Task/TaskModifyLinks.cpp.o
+src/Task/Web/TaskDownloadWeb.cpp.o:
+	$(MAKE) -f CMakeFiles/web_downloader.dir/build.make CMakeFiles/web_downloader.dir/src/Task/Web/TaskDownloadWeb.cpp.o
+.PHONY : src/Task/Web/TaskDownloadWeb.cpp.o
 
-src/Task/TaskModifyLinks.i: src/Task/TaskModifyLinks.cpp.i
+src/Task/Web/TaskDownloadWeb.i: src/Task/Web/TaskDownloadWeb.cpp.i
 
-.PHONY : src/Task/TaskModifyLinks.i
+.PHONY : src/Task/Web/TaskDownloadWeb.i
 
 # target to preprocess a source file
-src/Task/TaskModifyLinks.cpp.i:
-	$(MAKE) -f CMakeFiles/web_downloader.dir/build.make CMakeFiles/web_downloader.dir/src/Task/TaskModifyLinks.cpp.i
-.PHONY : src/Task/TaskModifyLinks.cpp.i
+src/Task/Web/TaskDownloadWeb.cpp.i:
+	$(MAKE) -f CMakeFiles/web_downloader.dir/build.make CMakeFiles/web_downloader.dir/src/Task/Web/TaskDownloadWeb.cpp.i
+.PHONY : src/Task/Web/TaskDownloadWeb.cpp.i
 
-src/Task/TaskModifyLinks.s: src/Task/TaskModifyLinks.cpp.s
+src/Task/Web/TaskDownloadWeb.s: src/Task/Web/TaskDownloadWeb.cpp.s
 
-.PHONY : src/Task/TaskModifyLinks.s
+.PHONY : src/Task/Web/TaskDownloadWeb.s
 
 # target to generate assembly for a file
-src/Task/TaskModifyLinks.cpp.s:
-	$(MAKE) -f CMakeFiles/web_downloader.dir/build.make CMakeFiles/web_downloader.dir/src/Task/TaskModifyLinks.cpp.s
-.PHONY : src/Task/TaskModifyLinks.cpp.s
+src/Task/Web/TaskDownloadWeb.cpp.s:
+	$(MAKE) -f CMakeFiles/web_downloader.dir/build.make CMakeFiles/web_downloader.dir/src/Task/Web/TaskDownloadWeb.cpp.s
+.PHONY : src/Task/Web/TaskDownloadWeb.cpp.s
 
-src/Task/TaskModifyPageLinks.o: src/Task/TaskModifyPageLinks.cpp.o
+src/Task/Web/TaskModifyLinks.o: src/Task/Web/TaskModifyLinks.cpp.o
 
-.PHONY : src/Task/TaskModifyPageLinks.o
+.PHONY : src/Task/Web/TaskModifyLinks.o
 
 # target to build an object file
-src/Task/TaskModifyPageLinks.cpp.o:
-	$(MAKE) -f CMakeFiles/web_downloader.dir/build.make CMakeFiles/web_downloader.dir/src/Task/TaskModifyPageLinks.cpp.o
-.PHONY : src/Task/TaskModifyPageLinks.cpp.o
+src/Task/Web/TaskModifyLinks.cpp.o:
+	$(MAKE) -f CMakeFiles/web_downloader.dir/build.make CMakeFiles/web_downloader.dir/src/Task/Web/TaskModifyLinks.cpp.o
+.PHONY : src/Task/Web/TaskModifyLinks.cpp.o
 
-src/Task/TaskModifyPageLinks.i: src/Task/TaskModifyPageLinks.cpp.i
+src/Task/Web/TaskModifyLinks.i: src/Task/Web/TaskModifyLinks.cpp.i
 
-.PHONY : src/Task/TaskModifyPageLinks.i
+.PHONY : src/Task/Web/TaskModifyLinks.i
 
 # target to preprocess a source file
-src/Task/TaskModifyPageLinks.cpp.i:
-	$(MAKE) -f CMakeFiles/web_downloader.dir/build.make CMakeFiles/web_downloader.dir/src/Task/TaskModifyPageLinks.cpp.i
-.PHONY : src/Task/TaskModifyPageLinks.cpp.i
+src/Task/Web/TaskModifyLinks.cpp.i:
+	$(MAKE) -f CMakeFiles/web_downloader.dir/build.make CMakeFiles/web_downloader.dir/src/Task/Web/TaskModifyLinks.cpp.i
+.PHONY : src/Task/Web/TaskModifyLinks.cpp.i
 
-src/Task/TaskModifyPageLinks.s: src/Task/TaskModifyPageLinks.cpp.s
+src/Task/Web/TaskModifyLinks.s: src/Task/Web/TaskModifyLinks.cpp.s
 
-.PHONY : src/Task/TaskModifyPageLinks.s
+.PHONY : src/Task/Web/TaskModifyLinks.s
 
 # target to generate assembly for a file
-src/Task/TaskModifyPageLinks.cpp.s:
-	$(MAKE) -f CMakeFiles/web_downloader.dir/build.make CMakeFiles/web_downloader.dir/src/Task/TaskModifyPageLinks.cpp.s
-.PHONY : src/Task/TaskModifyPageLinks.cpp.s
+src/Task/Web/TaskModifyLinks.cpp.s:
+	$(MAKE) -f CMakeFiles/web_downloader.dir/build.make CMakeFiles/web_downloader.dir/src/Task/Web/TaskModifyLinks.cpp.s
+.PHONY : src/Task/Web/TaskModifyLinks.cpp.s
+
+src/Task/Web/TaskModifyPageLinks.o: src/Task/Web/TaskModifyPageLinks.cpp.o
+
+.PHONY : src/Task/Web/TaskModifyPageLinks.o
+
+# target to build an object file
+src/Task/Web/TaskModifyPageLinks.cpp.o:
+	$(MAKE) -f CMakeFiles/web_downloader.dir/build.make CMakeFiles/web_downloader.dir/src/Task/Web/TaskModifyPageLinks.cpp.o
+.PHONY : src/Task/Web/TaskModifyPageLinks.cpp.o
+
+src/Task/Web/TaskModifyPageLinks.i: src/Task/Web/TaskModifyPageLinks.cpp.i
+
+.PHONY : src/Task/Web/TaskModifyPageLinks.i
+
+# target to preprocess a source file
+src/Task/Web/TaskModifyPageLinks.cpp.i:
+	$(MAKE) -f CMakeFiles/web_downloader.dir/build.make CMakeFiles/web_downloader.dir/src/Task/Web/TaskModifyPageLinks.cpp.i
+.PHONY : src/Task/Web/TaskModifyPageLinks.cpp.i
+
+src/Task/Web/TaskModifyPageLinks.s: src/Task/Web/TaskModifyPageLinks.cpp.s
+
+.PHONY : src/Task/Web/TaskModifyPageLinks.s
+
+# target to generate assembly for a file
+src/Task/Web/TaskModifyPageLinks.cpp.s:
+	$(MAKE) -f CMakeFiles/web_downloader.dir/build.make CMakeFiles/web_downloader.dir/src/Task/Web/TaskModifyPageLinks.cpp.s
+.PHONY : src/Task/Web/TaskModifyPageLinks.cpp.s
 
 src/main.o: src/main.cpp.o
 
@@ -834,21 +834,21 @@ help:
 	@echo "... src/Task/TaskBase.o"
 	@echo "... src/Task/TaskBase.i"
 	@echo "... src/Task/TaskBase.s"
-	@echo "... src/Task/TaskDownloadLinks.o"
-	@echo "... src/Task/TaskDownloadLinks.i"
-	@echo "... src/Task/TaskDownloadLinks.s"
-	@echo "... src/Task/TaskDownloadPage.o"
-	@echo "... src/Task/TaskDownloadPage.i"
-	@echo "... src/Task/TaskDownloadPage.s"
-	@echo "... src/Task/TaskDownloadWeb.o"
-	@echo "... src/Task/TaskDownloadWeb.i"
-	@echo "... src/Task/TaskDownloadWeb.s"
-	@echo "... src/Task/TaskModifyLinks.o"
-	@echo "... src/Task/TaskModifyLinks.i"
-	@echo "... src/Task/TaskModifyLinks.s"
-	@echo "... src/Task/TaskModifyPageLinks.o"
-	@echo "... src/Task/TaskModifyPageLinks.i"
-	@echo "... src/Task/TaskModifyPageLinks.s"
+	@echo "... src/Task/Web/TaskDownloadLinks.o"
+	@echo "... src/Task/Web/TaskDownloadLinks.i"
+	@echo "... src/Task/Web/TaskDownloadLinks.s"
+	@echo "... src/Task/Web/TaskDownloadPage.o"
+	@echo "... src/Task/Web/TaskDownloadPage.i"
+	@echo "... src/Task/Web/TaskDownloadPage.s"
+	@echo "... src/Task/Web/TaskDownloadWeb.o"
+	@echo "... src/Task/Web/TaskDownloadWeb.i"
+	@echo "... src/Task/Web/TaskDownloadWeb.s"
+	@echo "... src/Task/Web/TaskModifyLinks.o"
+	@echo "... src/Task/Web/TaskModifyLinks.i"
+	@echo "... src/Task/Web/TaskModifyLinks.s"
+	@echo "... src/Task/Web/TaskModifyPageLinks.o"
+	@echo "... src/Task/Web/TaskModifyPageLinks.i"
+	@echo "... src/Task/Web/TaskModifyPageLinks.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

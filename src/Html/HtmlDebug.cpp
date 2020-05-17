@@ -2,6 +2,7 @@
 // Created by Richard Baláž on 20/04/2020.
 //
 
+#include <precomp.h>
 #include "HtmlDebug.h"
 
 auto HtmlDebug::isLeaf(xmlNode *node) -> bool
@@ -24,7 +25,7 @@ auto HtmlDebug::printNode(xmlNode *node, size_t indent) -> void
     {
         if(node->type == XML_ELEMENT_NODE)
         {
-            printf("%*c%s\n", indent*2, '-', node->name, xmlNodeGetContent(node));
+            printf("%s%s%s\n", string(indent * 2, '-').c_str(), node->name, xmlNodeGetContent(node));
         }
         printNode(node->children, indent + 1);
         node = node->next;

@@ -6,7 +6,7 @@
 #include <Html/Html.h>
 #include <Html/Custom/HtmlNotFound.h>
 #include "TaskSaveNotFoundPage.h"
-#include "Task/TaskDownloadPage.h"
+#include "Task/Web/TaskDownloadPage.h"
 
 TaskSaveNotFoundPage::TaskSaveNotFoundPage()
 {}

@@ -17,6 +17,9 @@
 #include <optional>
 #include <sstream>
 #include <queue>
+#include <filesystem>
+#include <cassert>
+#include <future>
 
 using namespace std;
 

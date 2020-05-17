@@ -13,6 +13,7 @@ public:
 
 public:
     virtual auto process() -> void = 0;
+    virtual auto processAsync() -> void = 0;
 private:
     virtual auto setNext_impl(unique_ptr<Task> task) -> Task & = 0;
 };

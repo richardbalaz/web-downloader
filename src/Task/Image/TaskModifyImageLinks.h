@@ -5,10 +5,11 @@
 #ifndef WEB_DOWNLOADER_TASKMODIFYIMAGELINKS_H
 #define WEB_DOWNLOADER_TASKMODIFYIMAGELINKS_H
 
-#include "Task/TaskModifyLinks.h"
+#include "Task/Web/TaskModifyLinks.h"
 
 class Html;
 
+// Find all images and replace their links so they either point to local file or remote http url
 class TaskModifyImageLinks : public TaskModifyLinks
 {
 public:

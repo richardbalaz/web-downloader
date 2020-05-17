@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Web downloader doc</title>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col mt-3">
+            <h1 class="text-center">Web downloader</h1>
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Zadanie</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="documentation.html">Dokumentácia</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="example.html">Príklad</a>
+                </li>
+            </ul>
+            <div class="card">
+                <h5 class="card-header">Popis jednotivých súčastí</h5>
+                <div class="card-body">
+                    <h5>Http</h5>
+                    <ul>
+                        <li><strong>HttpClient</strong>: Trieda na komunikaciu s HTTP serverom, dokaze sa pripojit, vyziadat URL a precitat odpoved</li>
+                        <li><strong>HttpPath</strong>: Pouziva sa na vsetky odkazy (relativne aj absolutne), dokaze odkaz parsovat na hostname a uri</li>
+                        <li><strong>HttpMap</strong>: Mapa HTTP servera pomocou ktorej sa pamataju uz navstivene linky a tym sa predchadza opakovanym stahovaniam</li>
+                    </ul>
+                    <h5>Html</h5>
+                    <ul>
+                        <li><strong>HtmlParser</strong>: Parsovaci interface medzi libxml2 a aplikaciou, dokaze z HTML stringu vyrobit HTML strom</li>
+                        <li><strong>HtmlDumper</strong>: Generovaci interface medzi libxmlľ a aplikaciou, dokaze ulozit HTML strom do HTML suboru</li>
+                        <li><strong>Html</strong>: Vyraba ho HtmlParser, je to interface na manipulaciu s libxml2 strom, vie vyhladat tagy a menit ich atributy</li>
+                    </ul>
+
+                    <h5>Application</h5>
+                    <ul>
+                        <li>Staticke data a setttingy aplikacie, tu sa deje jednoduche parsovanie argumentov a cez <code>run()</code> sa spusta aplikacia</li>
+                    </ul>
+
+                    <h5>Task</h5>
+                    <ul>
+                        <li>Je to architektura ktora umoznuje definovat task ktory moze pozostavat z viacerych znovupouzitelnych mensich subtaskoch</li>
+                        <li>Funguje na principe Chain-of-responsibility: task definuje ktory subtask bude nasledovat za nim</li>
+                        <li><i>Napr.:</i> task stiahnutie vsetkych obrazkov zahrna najdenie vsetkych obrazkov a na kazdy obrazok definovanie subtasku
+                            stiahnutie suboru, ktory nasledne subor stiahne a ako subtask si definuje task ulozenie suboru, ktory uz
+                            nema dalsie subtasky.</li>
+                        <li>Z hladiska implementacie je to spravene tak, ze trieda <code>TaskBase</code> je zakladna trieda od ktorej musia dedit vsetky
+                            tasky. Kazdy task dostane vsetky vstupy cez konstruktor a uloha toho tasku sa deje v v <code>process()</code> - ktory musi
+                            implementovat. Task si v <code>process()</code> definuje jeho subtasky cez <code>setNext()</code> a procesovanie subtaskov pusti
+                            na konci funkcie <code>process()</code> zavolanim <code>TaskBase::process()</code></li>
+
+                        <li><code>TaskBase</code> podporuje aj asynchronne (viacvlakovne) procesovanie subtaskov. Podmienkou je, aby subtasky neboli zavisle
+                        na poradi ich spracovania. Staci v tasku nastavit subtasky cez <code>setNext()</code> a nakoniec ich spustit cez <code>Taskbase::processAsync()</code></li>
+                    </ul>
+
+                    <h4>Flowchart taskov aplikacie</h4>
+
+                    <img src="web-downloader-flowchart.png" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

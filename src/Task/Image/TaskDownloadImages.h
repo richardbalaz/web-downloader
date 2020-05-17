@@ -10,6 +10,7 @@
 
 class Html;
 
+// Find all images (<img> nodes) and download them
 class TaskDownloadImages : public TaskBase
 {
 public:

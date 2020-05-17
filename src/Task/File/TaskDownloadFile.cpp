@@ -13,8 +13,6 @@ TaskDownloadFile::TaskDownloadFile(const HttpPath & url)
 
 auto TaskDownloadFile::process() -> void
 {
-    cout << "download file '" << _url.getHostname() << "' uri: '" << _url.getUri() << "'" << endl;
-
     string content = Application::getHttpClient().getContent(_url);
 
     setNext<TaskSaveFile>(_url, content);

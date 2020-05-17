@@ -27,5 +27,5 @@ auto TaskDownloadImages::process() -> void
         setNext<TaskDownloadFile>(url);
     }
 
-    TaskBase::process();
+    TaskBase::processAsync();
 }

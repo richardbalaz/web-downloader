@@ -10,6 +10,7 @@
 
 class Html;
 
+// Save hard-coded 'Page not found' into local /404.html file
 class TaskSaveNotFoundPage : public TaskBase
 {
 public:

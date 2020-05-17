@@ -7,7 +7,9 @@
 
 auto HttpMap::addPath(const HttpPath & path) -> void
 {
-    assert(!hasPath(path) && "Path already exists in map");
+//  assert(!hasPath(path) && "Path already exists in map");
+    if(hasPath(path))
+        return;
 
     const auto pathNodeNames = decompose(path.getUri());
 
@@ -49,7 +51,7 @@ auto HttpMap::decompose(const string & path) -> vector<string>
 }
 
 HttpMap::HttpMap()
-    : _root(make_shared<HttpMapRoot>())
+    : _root(make_unique<HttpMapRoot>())
 {}
 
 HttpMapNode::HttpMapNode(const string & name, HttpMapNode * parent)
@@ -59,9 +61,11 @@ HttpMapNode::HttpMapNode(const string & name, HttpMapNode * parent)
 
 auto HttpMapNode::createChild(const string &name) -> HttpMapNode &
 {
-    assert(!hasChild(name) && "Child already exists");
+//  assert(!hasChild(name) && "Child already exists");
+    if(hasChild(name))
+        return getChild(name);
 
-    return *_children.emplace_back(make_shared<HttpMapNode>(name, this));
+    return *_children.emplace_back(make_unique<HttpMapNode>(name, this));
 }
 
 auto HttpMapNode::getChild(const string &name) -> HttpMapNode &
@@ -75,7 +79,7 @@ auto HttpMapNode::getChild(const string &name) -> HttpMapNode &
         return *_parent;
     }
 
-    return **find_if(_children.begin(), _children.end(), [&](const shared_ptr<HttpMapNode> & child)
+    return **find_if(_children.begin(), _children.end(), [&](const unique_ptr<HttpMapNode> & child)
     {
         return child->getName() == name;
     });
@@ -86,7 +90,7 @@ auto HttpMapNode::hasChild(const string &name) -> bool
     if(name == "." || (name == ".." && _parent != nullptr))
         return true;
 
-    return any_of(_children.begin(), _children.end(), [&](const shared_ptr<HttpMapNode> & child)
+    return any_of(_children.begin(), _children.end(), [&](const unique_ptr<HttpMapNode> & child)
     {
         return child->getName() == name;
     });
@@ -97,7 +101,7 @@ auto HttpMapNode::getName() -> const string &
     return _name;
 }
 
-auto HttpMapNode::getChildren() -> vector<shared_ptr<HttpMapNode>> &
+auto HttpMapNode::getChildren() -> vector<unique_ptr<HttpMapNode>> &
 {
     return _children;
 }

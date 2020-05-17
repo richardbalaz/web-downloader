@@ -12,15 +12,12 @@
 #include "HttpClient.h"
 #include "HttpPath.h"
 
-HttpClient::HttpClient()
-{}
-
 HttpClient::~HttpClient()
 {
     closeSocket();
 }
 
-HttpClient &HttpClient::sendHttp()
+auto HttpClient::sendHttp() -> HttpClient &
 {
     if(!openSocket())
     {
@@ -28,12 +25,7 @@ HttpClient &HttpClient::sendHttp()
         return *this;
     }
 
-    string get_http;
-
-    if(_sendData != nullptr)
-        get_http += "PUT ";
-    else
-        get_http += "GET ";
+    string get_http = "GET ";
 
     get_http += _uri + " HTTP/1.1\r\n"
         "Host: " + _hostname + "\r\n"
@@ -41,14 +33,6 @@ HttpClient &HttpClient::sendHttp()
         "Accept-Encoding: deflate\r\n"
         "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36\r\n"
         "Connection: close\r\n";
-
-    if(_sendData != nullptr)
-    {
-        char buf[100];
-        sprintf(buf, "%zu", _sendData->size());
-        get_http += string("Content-Type: ") + _sendDataType + "\r\n";
-        get_http += string("Content-Length: ") + buf + "\r\n";
-    }
 
     get_http += "\r\n";
 
@@ -68,7 +52,7 @@ HttpClient &HttpClient::sendHttp()
         return true;
     };
 
-    if(!SendIt(get_http) || (_sendData != nullptr && !SendIt(*_sendData)))
+    if(!SendIt(get_http))
     {
         closeSocket();
         _ok = false;
@@ -78,7 +62,7 @@ HttpClient &HttpClient::sendHttp()
 }
 
 
-HttpClient & HttpClient::readResponse()
+auto HttpClient::readResponse() -> HttpClient &
 {
     if (!isAlive(_socket))
         return *this;
@@ -114,7 +98,7 @@ HttpClient & HttpClient::readResponse()
 }
 
 
-void HttpClient::closeSocket()
+auto HttpClient::closeSocket() -> void
 {
     if(!isAlive(_socket))
         return;
@@ -123,17 +107,17 @@ void HttpClient::closeSocket()
     _socket = -1;
 }
 
-void HttpClient::setUri(const string & uri)
+auto HttpClient::setUri(const string & uri) -> void
 {
     _uri = uri;
 }
 
-void HttpClient::setHostname(const string & hostname)
+auto HttpClient::setHostname(const string & hostname) -> void
 {
     _hostname = hostname;
 }
 
-bool HttpClient::openSocket()
+auto HttpClient::openSocket() -> bool
 {
     addrinfo hints {}, *lookup;
     hints.ai_socktype = SOCK_STREAM;
@@ -162,7 +146,7 @@ bool HttpClient::openSocket()
     return true;
 }
 
-string HttpClient::getContent(const HttpPath & url)
+auto HttpClient::getContent(const HttpPath & url) -> string
 {
     string tillError;
 
@@ -176,3 +160,39 @@ string HttpClient::getContent(const HttpPath & url)
     return data();
 }
 
+auto HttpClient::setTimeout(int seconds) -> HttpClient &
+{
+    _timeout = seconds;
+    return *this;
+}
+
+auto HttpClient::ok() const -> bool
+{
+    return _ok;
+}
+
+auto HttpClient::response() const -> const string &
+{
+    return _response;
+}
+
+auto HttpClient::data() const -> const string &
+{
+    return _data;
+}
+
+auto HttpClient::tillError() const -> const string &
+{
+    return _readTillError;
+}
+
+auto HttpClient::dataTillError(string & tillError) -> HttpClient &
+{
+    tillError = _readTillError;
+    return *this;
+}
+
+auto HttpClient::isAlive(int ret) const -> bool
+{
+    return ret >= 0;
+}

@@ -37,7 +37,9 @@ auto HttpPath::extractHostname(const optional<HttpPath> & prevPath) -> bool
 {
     if(!isAbsolute())
     {
-        _hostname = prevPath->getHostname();
+        if(prevPath.has_value())
+            _hostname = prevPath->getHostname();
+
         return false;
     }
 

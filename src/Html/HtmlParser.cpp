@@ -18,7 +18,7 @@ auto HtmlParser::parse(const string &document, const HttpPath & url) -> shared_p
 
 auto HtmlParser::getLibXmlParsingOptions() -> int
 {
-    return HTML_PARSE_NONET | HTML_PARSE_NOERROR | HTML_PARSE_NOWARNING;
+    return HTML_PARSE_RECOVER | HTML_PARSE_NONET | HTML_PARSE_NOERROR | HTML_PARSE_NOWARNING;
 }
 
 auto HtmlParser::getLibXmlParsingBaseUrl() -> const char *

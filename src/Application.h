@@ -12,8 +12,10 @@
 class Application
 {
 public:
+    // Return webiste url about to be downloaded
+    static auto getWebsiteToDownload() -> const string &;
     // Return client for Http communication
-    static auto getHttpClient() -> HttpClient &;
+    static auto getHttpClient() -> HttpClient;
     // Return output folder where the website is downloaded (ends without '/')
     static auto getOutputFolder() -> const string &;
     // Return map of website
@@ -26,6 +28,14 @@ public:
     static auto isNotFoundForExcessiveDepthEnabled() -> bool;
 
 public:
+    static auto init(int argc, char * argv[]) -> void;
+    static auto init(const vector<string> & args) -> void;
+
+    static auto run() -> void;
+
+public:
+    // Set website url about to be downloaded
+    static auto setWebsiteToDownload(string url) -> void;
     // Set output folder root where the website is downloaded (e.g. ~/localhost-website/)
     static auto setOutputFolder(string folder) -> void;
     // Set maximum depth of website which can be downloaded
@@ -36,8 +46,8 @@ public:
     static auto setNotFoundForExcessiveDepthEnabled(bool enabled) -> void;
 
 public:
+    static string _websiteToDownload;
     static HttpMap _httpMap;
-    static HttpClient _httpClient;
     static string _outputFolder;
     static unsigned int _maxDepth;
     static bool _localImagesEnabled;

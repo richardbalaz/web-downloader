@@ -9,6 +9,7 @@
 #include <Http/HttpPath.h>
 #include "Task/TaskBase.h"
 
+// Download all url's in stylesheet and save it into local file
 class TaskDownloadStyle : public TaskBase
 {
 public:

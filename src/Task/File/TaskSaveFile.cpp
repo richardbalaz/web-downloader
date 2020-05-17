@@ -8,7 +8,9 @@
 TaskSaveFile::TaskSaveFile(const HttpPath & url, const string & content)
     : _url(url)
     , _content(content)
-{}
+{
+
+}
 
 void TaskSaveFile::process()
 {
@@ -17,7 +19,7 @@ void TaskSaveFile::process()
     filesystem::path outputPath(outputFile);
     filesystem::create_directories(outputPath.parent_path());
 
-    assert(!filesystem::exists(outputPath) && "Trying to save file which already exists, use HttpMap to avoid.");
+//  assert(!filesystem::exists(outputPath) && "Trying to save file which already exists, use HttpMap to avoid.");
 
     ofstream file(outputFile, ios::out | ios::binary);
 
